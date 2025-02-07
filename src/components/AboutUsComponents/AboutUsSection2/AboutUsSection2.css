@@ -1,0 +1,81 @@
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .itemicon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 35px;
+  }
+  
+  .itemdescription {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .itemicon {
+      margin-top: 40px;
+    }
+    
+    .itemdescription {
+      max-width: 100%;
+      margin-right: 5px;
+    }
+  }
+
+
+
+  .AboutusS2container {
+    display: flex;
+    height: 965px;
+    background-color: #DED9E1;
+    justify-content: center;
+    padding-top: 140px;
+    gap: 100px;}
+  
+  .AboutusS2mainImage {
+    position: relative;
+    width: 670px;
+    height: 670px;
+    
+    
+    border-radius: 15px;
+    
+  }
+  
+  .AboutusS2content {
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    height: 680px; /* Set the total height */
+    justify-content: space-between;
+    color:#002B49;
+    text-align: left;
+    width: 524px;
+    height: 670px;
+  } 
+    
+    
+  
+  @media (max-width: 991px) {
+    .AboutusS2container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+  
+    .AboutusS2mainImage {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+   
+  
+    .AboutusS2content {
+      max-width: 100%;
+
+    }
+  }

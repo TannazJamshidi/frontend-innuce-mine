@@ -1,0 +1,49 @@
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 518px; 
+    background-image: url('../../assets/rectangleBackground.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content-box {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 20px 40px; /* Inner spacing */
+    border-radius: 20px; 
+    backdrop-filter: blur(7.5px); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    text-align: center; /* Center text */
+    width: 80%; /* Make width responsive */
+    max-width: 885px; /* Limit maximum width */
+    height: auto; /* Adjust height to fit content */
+    margin: auto; /* Center the box within the parent */
+  }
+  
+  .content-box h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center; /* Center text */
+    color: #002B49; 
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Optional: Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .content-box {
+      width: 90%; /* Reduce width on smaller screens */
+      padding: 15px 20px; /* Adjust padding */
+    }
+  
+    .content-box h1 {
+      font-size: 18px; /* Adjust font size */
+      line-height: 28px;
+    }
+  }
+  

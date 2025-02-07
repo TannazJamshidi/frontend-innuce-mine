@@ -1,0 +1,102 @@
+.teamSection {
+    background-color: rgba(0, 43, 73, 1);
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 78px 67px 138px;
+    height: 800px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 991px) {
+    .teamSection {
+      padding: 0 20px 100px;
+    }
+  }
+  
+  .Teamtitle {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    align-self: center;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 991px) {
+    .Teamtitle {
+      font-size: 40px;
+    }
+  }
+  
+  .members {
+    display: flex;
+    margin-top: 33px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 81px 49px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .members {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+
+  .memberCard {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .memberCard:hover {
+    transform: translateY(-5px);
+  }
+
+  .memberInfo {
+    margin-top: 10px;
+  }
+  .memberDescription {
+    position: absolute;
+    left: 0%;
+    right: 2.94%;
+    top: 8.2%;
+    bottom: 5.74%;
+    background:#DED9E1;
+    color: rgba(0, 43, 73, 1);
+    backdrop-filter: blur(3.5px);
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 0.9;
+  }
+
+  .descriptionText {
+    margin-bottom: 10px;
+    
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+
+
+  .linkedinButton {
+    display:flex;
+    margin-top: 10px;
+    position: absolute;
+    color:rgba(0, 43, 73, 1);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+   
+  }
+  
+  .linkedinButton:hover {
+    color: #F48124;
+  }

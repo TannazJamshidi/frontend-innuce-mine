@@ -1,0 +1,33 @@
+.memberCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 275;
+  }
+  
+  @media (max-width: 991px) {
+    .memberCard {
+      margin-top: 40px;
+    }
+  }
+  
+  .memberimg {
+    aspect-ratio: 1.02;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 5px;
+    align-self: stretch;
+  }
+  
+  .membername {
+    font-size: 24px;
+    margin-top: 7px;
+  }
+  
+  .memberrole {
+    font-size: 12px;
+    margin-top: 11px;
+  }

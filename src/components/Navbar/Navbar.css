@@ -1,0 +1,163 @@
+/* General Navbar Styles */
+.navbar {
+  background-color: #002B49;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Padding for spacing */
+  z-index: 10; /* Ensure navbar stays on top */
+}
+
+/* Logo Container */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  aspect-ratio: 1.07;
+  width: 50px;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  gap: 30px; /* Space out nav items */
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  
+}
+
+
+.navItem {
+  position: relative; /* Required for positioning dropdown */
+  cursor: pointer;
+}
+
+.navItem.active .navLabel {
+  color: #F48124; /* Orange color for the active item */
+}
+
+
+.navItem .navLabel {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover .navLabel {
+  color: #F48124;
+}
+
+/* Dropdown Icon */
+.dropdownIcon {
+  aspect-ratio: 1.43;
+  object-fit: contain;
+  object-position: center;
+  width: 15px;
+  margin-left: 10px;
+}
+
+.dropdownMenu {
+  
+  background-color: #002B49;
+  padding-top: 15px ;
+  position: absolute;
+  top: 100%; /* Aligns dropdown directly below the nav item */
+  left: -15px;
+  
+  z-index: 10;
+}
+
+.navItem:hover .dropdownMenu,
+.navItem:focus-within .dropdownMenu {
+  display: block; /* Shows dropdown when hovering over or focusing on the navItem */
+}
+
+.dropdownLink {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.dropdownLink:hover {
+  color: #F48124;
+}
+
+/* Access Button */
+.accessButton {
+  border-radius: 15px;
+  background-color: #fff;
+  color: rgba(0, 43, 73, 1);
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accessButton:hover {
+  background-color: #F48124;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navItem {
+    padding: 8px 0;
+    white-space: nowrap;
+  }
+
+  .accessButton {
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 40px;
+  }
+
+  .brandName {
+    font-size: 14px;
+  }
+
+  .navLinks {
+    gap: 10px;
+  }
+
+  .accessButton {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

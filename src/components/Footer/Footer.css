@@ -1,0 +1,109 @@
+
+ 
+ .footerall{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    background-color: #007EA8;
+    flex-direction: column;
+ }
+
+
+ .footerContent {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: start;
+    gap: 230px ;
+    background-color: #007EA8;
+    color: #fff;
+    padding: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: center;
+  }
+  @media (max-width: 991px) {
+    .footerContent {
+      max-width: 100%;
+    }
+  }
+  
+  .navigationLinks a {
+    color: white;  /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    
+  }
+
+  .navigationLinks a:hover {
+    color:#F48124;
+  }
+
+  .contactInfo,
+  .directorsInfo,
+  .navigationLinks,
+  .socialMediaLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .socialMediaLinks {
+    align-self: stretch;
+  }
+  .socialMediaIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    margin-top: 19px;
+  }
+  .largeImage {
+    aspect-ratio: 1000;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 32px;
+  }
+  @media (max-width: 991px) {
+    .largeImage {
+      max-width: 100%;
+      margin-right: 3px;
+    }
+  }
+  .extraLargeImage {
+    aspect-ratio: 16.67;
+    object-fit: contain;
+    object-position: center;
+    width: 1343px;
+    margin-top: 5px;
+  }
+  @media (max-width: 991px) {
+    .extraLargeImage {
+      max-width: 100%;
+    }
+  }
+
+  .footerLine {
+    width: 1400px; /* Set the width */
+    height: 0; /* No height */
+    border-bottom: 1px solid #fff; /* Bottom border as stroke */
+    border-left: none; /* No left border */
+    border-right: none; /* No right border */
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+.supporters{
+    display: flex; /* Aligns the images horizontally */
+    justify-content: center; /* Centers the images within the footer */
+    align-items: center;
+    gap: 15px;
+    
+}
+
+
+.S{
+    margin: 0 28px;
+}

@@ -1,0 +1,135 @@
+.Facilitycontainer {
+    background-color: rgba(222, 217, 225, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 80px;
+    overflow: hidden;
+  }
+  
+  .Facilitywrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1206px;
+    flex-direction: column;
+  }
+  
+  .Facilityheader {
+    display: flex;
+    width: 883px;
+    max-width: 100%;
+    align-items: center;
+    gap: 20px;
+    align-self: center;
+    justify-content: space-between;
+  }
+  
+  .FacilityheaderIconB {
+    aspect-ratio: 1.5;
+    object-fit: contain;
+    object-position: center;
+    width: 48px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+
+  .FacilityheaderIconF {
+    aspect-ratio: 1.5;
+    transform: scaleX(-1);
+    object-fit: contain;
+    object-position: center;
+    width: 48px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  .FacilityheaderIconF:hover{
+    color: #F48124;
+  }
+  
+  .Facilitytitle {
+    color: rgba(0, 43, 73, 1);
+    text-align: center;
+    font-size: 48px; 
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .FacilitycardGrid {
+    margin-top: 140px;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .FacilitycardColumn {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: stretch;
+    border: 2px solid transparent; /* Initial border for smooth transition */
+    border-radius: 15px;
+    transition: border-color 0.2s ease; /* Smooth hover effect */
+  }
+  .FacilitycardColumn:hover {
+    border-color: #F48124; /* Orange border on hover */
+  }
+  
+  .facilityCard {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 43, 73, 1);
+    text-align: center;
+    
+    padding: 20px;
+  }
+  
+  
+  .FcardTitle {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+    align-self: center;
+  }
+  
+  .FcardDescription {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 991px) {
+    .Facilitycontainer {
+      padding: 100px 20px;
+    }
+  
+    .Facilitywrapper {
+      max-width: 100%;
+    }
+  
+    .Facilitytitle {
+      font-size: 40px;
+    }
+  
+    .FacilitycardGrid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      margin-top: 40px;
+    }
+  
+    .FacilitycardColumn {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .FacilitycardColumn:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  @media (forced-colors: active) {
+    .FacilityheaderIcon {
+      forced-color-adjust: none;
+    }
+  }

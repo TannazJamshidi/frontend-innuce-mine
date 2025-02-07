@@ -1,0 +1,45 @@
+.AboutUsheader {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../assets/AboutUsHeader.png");
+    background-size: cover;
+    height: 785px;
+    align-items: center;
+    gap: 150px;
+  }
+  
+  .AboutUstitle {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    margin-top: 200px;
+   
+  }
+  
+  .AboutUsdescription {
+    
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 1277px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #002b49;
+    padding: 10px;
+    
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+    
+    .title {
+      font-size: 40px;
+    }
+    
+    .description {
+      max-width: 100%;
+      margin: 40px 0 10px;
+    }
+  }

@@ -1,0 +1,86 @@
+.hero {
+    display: flex;
+    background-image: url('../../assets/gifHome.gif');
+    background-size:cover ;
+    background-position: center;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    
+    color: rgba(0, 43, 73, 1);
+    
+    justify-content: center;
+    padding: 163px 80px;
+  }
+  
+  .herocontainer {
+    display: flex;
+    width: 100%;
+    max-width: 1034px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .herotitle {
+    font-size: 48px;
+    font-weight: 600;
+    align-self: stretch;
+    text-align: center;
+  }
+  
+  .herodescription {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 59px;
+    width: 731px;
+    text-align: center;
+  }
+  
+  .heroexploreButton {
+    
+    border-radius: 15px;
+    background-color: rgba(0, 43, 73, 1);
+    margin-top: 59px;
+    gap: 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    padding: 5px 12px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heroexploreButton:hover {
+    background-color: #F48124;
+  }
+  
+  .heroexploreButton:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+  
+  @media (max-width: 991px) {
+    .hero {
+      padding: 100px 20px;
+    }
+    
+    .herocontainer {
+      max-width: 100%;
+    }
+    
+    .herotitle {
+      max-width: 100%;
+      font-size: 40px;
+    }
+    
+    .herodescription {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    
+    .heroexploreButton {
+      margin-top: 40px;
+    }
+  }
