@@ -10,6 +10,7 @@ function AboutUs() {
       <NeuromorphicSection></NeuromorphicSection>
       <MeetTeam></MeetTeam>
       <FooterContent></FooterContent>
+      <FooterContent></FooterContent>
     </div>
   );
 }
