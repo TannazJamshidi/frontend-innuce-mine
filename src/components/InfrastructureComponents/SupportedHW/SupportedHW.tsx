@@ -22,21 +22,19 @@ export const SupportedHardware: React.FC = () => {
   };
 
   return (
-    <section className="section">
-      <div className="container">
-        <h1 className="heading">Supported Hardware</h1>
-        <div className="cardGrid">
-          {hardwareData.map((hardware, index) => (
-            <div key={index} className="cardWrapper">
-              <HardwareCard
-                title={hardware.title}
-                description={hardware.description}
-                onLearnMore={() => handleLearnMore(hardware.title)}
-              />
-            </div>
-          ))}
-        </div>
+    <div className="HWcontainer">
+      <h1 className="HWheading">Supported Hardware</h1>
+      <div className="HWcardGrid">
+        {hardwareData.map((hardware, index) => (
+          <div key={index}>
+            <HardwareCard
+              title={hardware.title}
+              description={hardware.description}
+              onLearnMore={() => handleLearnMore(hardware.title)}
+            />
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };

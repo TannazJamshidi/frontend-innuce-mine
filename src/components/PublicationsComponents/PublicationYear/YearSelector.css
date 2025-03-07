@@ -1,0 +1,52 @@
+.year-selector {
+  display: flex;
+  max-width: 528px;
+  justify-content: center;
+  gap: 26px;
+  color: rgba(0, 43, 73, 1);
+  flex-wrap: wrap;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 70px auto 0;
+}
+
+.year-button-group {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.year-button {
+  border-radius: 6px;
+  min-height: 43px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selected-year {
+  background-color: rgba(0, 43, 73, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.arrow-icon {
+  aspect-ratio: 0.41;
+  object-fit: contain;
+  object-position: center;
+  width: 7px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .year-selector,
+  .year-button-group,
+  .year-button {
+    white-space: initial;
+    font-size: 24px;
+  }
+}

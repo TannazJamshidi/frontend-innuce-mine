@@ -11,7 +11,6 @@ interface Paper {
 }
 
 const PaperList: React.FC = () => {
-  const [checkedPapers, setCheckedPapers] = useState<Set<string>>(new Set());
   const [simplifiedPaperId, setSimplifiedPaperId] = useState<string | null>(
     null
   ); // State to track simplified paper
@@ -42,18 +41,6 @@ const PaperList: React.FC = () => {
     },
   ];
 
-  const handleCheck = (paperId: string) => {
-    setCheckedPapers((prev) => {
-      const newChecked = new Set(prev);
-      if (newChecked.has(paperId)) {
-        newChecked.delete(paperId);
-      } else {
-        newChecked.add(paperId);
-      }
-      return newChecked;
-    });
-  };
-
   const handleOpenPaper = (paperId: string) => {
     window.open(`/paper/${paperId}`, "_blank");
   };
@@ -77,7 +64,6 @@ const PaperList: React.FC = () => {
             onClick={handleCloseSummary}
             alt=""
           />
-
           <SummaryAi />
         </div>
       ) : (
@@ -89,27 +75,11 @@ const PaperList: React.FC = () => {
               title={paper.title}
               keywords={paper.keywords}
               openPaperText="OPEN PAPER"
-              simplifyText="SIMPLIFY IT"
+              simplifyText="IN NUTSHELL"
               onOpenPaper={() => handleOpenPaper(paper.id)}
               onSimplify={() => handleSimplify(paper.id)}
-              onCheck={() => handleCheck(paper.id)}
-              isChecked={checkedPapers.has(paper.id)}
             />
           ))}
-          <div className="iconEx-Nx">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/fedf28294640492c8068aacb6f1c1bf6/f07ffa755e64288d4ef807c2698a7b2c5a138184fb23c98615d55a4e11a6834f?apiKey=fedf28294640492c8068aacb6f1c1bf6&"
-              alt="First icon"
-              className="Flashicon"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/fedf28294640492c8068aacb6f1c1bf6/47f2e728b240fe2f92b9d8c0d68aca04a944c1c0a10601d648e17ca4e3181404?apiKey=fedf28294640492c8068aacb6f1c1bf6&"
-              alt="Second icon"
-              className="Flashicon"
-            />
-          </div>
         </>
       )}
     </div>

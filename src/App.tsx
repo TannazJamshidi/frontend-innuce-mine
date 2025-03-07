@@ -11,6 +11,7 @@ import Infrastructures from "./pages/Infrastructures";
 import AboutUs from "./pages/AboutUs";
 import Publications from "./pages/Publications";
 import ContactUs from "./pages/ContactUs";
+import UseCasesPage from "./pages/UseCasesPage";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Infrastructures" element={<Infrastructures />} />
+        <Route path="/UseCases" element={<UseCasesPage />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Publications" element={<Publications />} />
         <Route path="/ContactUs" element={<ContactUs />} />

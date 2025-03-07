@@ -11,7 +11,7 @@
   z-index: 10; /* Ensure navbar stays on top */
 }
 
-/* Logo Container */
+/*logo and brandname*/
 .logoContainer {
   display: flex;
   align-items: center;
@@ -29,10 +29,10 @@
   color: #fff;
 }
 
-/* Navigation Links */
+/* container for navItems */
 .navLinks {
   display: flex;
-  gap: 30px; /* Space out nav items */
+  gap: 30px; 
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -50,11 +50,12 @@
 }
 
 
-.navItem .navLabel {
+.navItem .navLabel { /*text of navItem*/
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
 }
+
 
 .navItem:hover .navLabel {
   color: #F48124;
@@ -76,8 +77,8 @@
   position: absolute;
   top: 100%; /* Aligns dropdown directly below the nav item */
   left: -15px;
-  
   z-index: 10;
+  border-radius: 15px;
 }
 
 .navItem:hover .dropdownMenu,
@@ -93,11 +94,12 @@
   text-align: left;
 }
 
+
 .dropdownLink:hover {
   color: #F48124;
 }
 
-/* Access Button */
+
 .accessButton {
   border-radius: 15px;
   background-color: #fff;
@@ -114,50 +116,83 @@
   color: #fff;
 }
 
-/* Responsive Adjustments */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div { /*line of hamburger*/
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger .bar.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger .bar.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 @media (max-width: 991px) {
   .navbar {
     padding: 10px 15px;
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    position: fixed;
+    
+  }
+
+  .dropdownLink {
+    font-size: 14px;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 27px;
   }
 
   .navLinks {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    width: 100%;
-    margin-top: 10px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 150px;
+    background-color: #002B49;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 100;
   }
 
-  .navItem {
-    padding: 8px 0;
-    white-space: nowrap;
+  .navLinks.show {
+    display: flex; /* Show nav links when the menu is open */
   }
 
-  .accessButton {
-    align-self: center;
-    width: 100%;
-    max-width: 200px;
-    margin-top: 15px;
-  }
-}
+  
 
-@media (max-width: 576px) {
-  .logo {
-    width: 40px;
+  .accessButton{
+    font-size: 14px;
+    margin-right: 50px;
   }
 
-  .brandName {
+  .brandName{
     font-size: 14px;
   }
 
-  .navLinks {
-    gap: 10px;
+  .navLabel{
+    font-size: 14px;
   }
 
-  .accessButton {
-    font-size: 14px;
-    padding: 10px;
+  .logoContainer{
+    gap: 5px;
   }
+
+  
 }

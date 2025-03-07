@@ -7,11 +7,11 @@ const MeetTeam: React.FC = () => {
   const members = [
     {
       imgSrc: memberProf,
-      name: "Borem Ipsum",
-      role: "CO FOUNDER & CEO",
+      name: "Jane Doe",
+      role: "HEAD OF DESIGN",
       description:
-        "Borem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-      linkedInUrl: "https://www.linkedin.com/in/borem-ipsum",
+        "Jane is passionate about creating user-centered designs. She has over 10 years of experience in graphic and product design, helping companies establish a strong visual identity.",
+      linkedInUrl: "https://www.linkedin.com/in/jane-doe",
     },
     {
       imgSrc: memberProf,

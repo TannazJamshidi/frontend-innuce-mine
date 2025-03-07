@@ -1,4 +1,4 @@
-.div {
+.WWDdiv {
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     padding: 105px 41px;
   }
   @media (max-width: 991px) {
-    .div {
+    .WWDdiv {
       padding: 100px 20px;
     }
   }
@@ -20,10 +20,10 @@
   }
   @media (max-width: 991px) {
     .whatWeDo {
-      font-size: 40px;
+      font-size: 28px;
     }
   }
-  .description {
+  .WWDdescription {
     color: rgba(0, 43, 73, 1);
     text-align: center;
     margin-top: 36px;
@@ -31,26 +31,26 @@
     line-height: 30px;
   }
   @media (max-width: 991px) {
-    .description {
-      max-width: 100%;
+    .WWDdescription {
+      font-size: 14px;
     }
   }
-  .cardsContainer {
+  .WWDcardsContainer {
     align-self: stretch;
     margin-top: 103px;
   }
   @media (max-width: 991px) {
-    .cardsContainer {
+    .WWDcardsContainer {
       max-width: 100%;
       margin-top: 40px;
     }
   }
-  .cardsGrid {
+  .WWDcardsGrid {
     gap: 20px;
     display: flex;
   }
   @media (max-width: 991px) {
-    .cardsGrid {
+    .WWDcardsGrid {
       flex-direction: column;
       align-items: stretch;
       gap: 0px;

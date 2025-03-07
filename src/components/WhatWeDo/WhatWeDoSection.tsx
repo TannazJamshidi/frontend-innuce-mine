@@ -7,16 +7,16 @@ import locationIcon from "../../assets/location.gif";
 
 export const WhatWeDoSection: React.FC = () => {
   return (
-    <div className="div">
+    <div className="WWDdiv">
       <div className="whatWeDo">WHAT WE DO</div>
-      <div className="description">
+      <div className="WWDdescription">
         The InNUCE Lab is dedicated to advancing research in neuromorphic
         computing and artificial intelligence. We focus on developing innovative
         hardware and software systems that mimic neural networks, enabling
         efficient, low-power solutions for complex computational tasks.
       </div>
-      <div className="cardsContainer">
-        <div className="cardsGrid">
+      <div className="WWDcardsContainer">
+        <div className="WWDcardsGrid">
           <InfoCard
             title="MISSION"
             iconSrc={missionIcon}

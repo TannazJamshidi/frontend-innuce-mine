@@ -1,6 +1,7 @@
 import React from "react";
 import "./InfraHeader.css";
 import brain from "../../../assets/brain.gif";
+import infographic from "../../../assets/infographic.svg";
 
 const InfraHeader: React.FC = () => {
   return (
@@ -41,7 +42,7 @@ const InfraHeader: React.FC = () => {
         </button>
       </div>
       <div className="animationInfra">
-        <img src={brain} alt="" />
+        <img src={infographic} alt="" />
       </div>
     </section>
   );

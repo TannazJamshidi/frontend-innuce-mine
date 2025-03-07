@@ -31,7 +31,7 @@ export const Tools: React.FC = () => {
         <h1 className="toolsTitle">InNuce Tools</h1>
         <div className="toolsGrid">
           {toolsData.map((tool, index) => (
-            <div key={index} className="toolColumn">
+            <div key={index}>
               <ToolCard {...tool} />
             </div>
           ))}

@@ -1,86 +1,134 @@
 .hero {
-    display: flex;
-    background-image: url('../../assets/gifHome.gif');
-    background-size:cover ;
-    background-position: center;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    
-    color: rgba(0, 43, 73, 1);
-    
-    justify-content: center;
-    padding: 163px 80px;
+  display: flex;
+  background-image: url('../../assets/gifHome.gif');
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  color: rgba(0, 43, 73, 1);
+  justify-content: center;
+  padding: 163px 80px;
+  text-align: center;
+}
+
+.herocontainer {
+  display: flex;
+  width: 100%;
+  max-width: 1034px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 20px; /* Ensure spacing on smaller screens */
+}
+
+.herotitle {
+  font-size: 48px;
+  font-weight: 600;
+  align-self: stretch;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.herodescription {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 59px;
+  max-width: 731px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Responsive Button */
+.heroexploreButton {
+  border-radius: 15px;
+  background-color: rgba(0, 43, 73, 1);
+  margin-top: 59px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  padding: 12px 24px; /* Increased padding for better tap experience */
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.heroexploreButton:hover {
+  background-color: #F48124;
+  transform: scale(1.05);
+}
+
+.heroexploreButton:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Tablet View (768px - 991px) */
+@media (max-width: 991px) {
+  .hero {
+      padding: 100px 40px;
   }
-  
-  .herocontainer {
-    display: flex;
-    width: 100%;
-    max-width: 1034px;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-  }
-  
+
   .herotitle {
-    font-size: 48px;
-    font-weight: 600;
-    align-self: stretch;
-    text-align: center;
-  }
-  
-  .herodescription {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 59px;
-    width: 731px;
-    text-align: center;
-  }
-  
-  .heroexploreButton {
-    
-    border-radius: 15px;
-    background-color: rgba(0, 43, 73, 1);
-    margin-top: 59px;
-    gap: 10px;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 300;
-    padding: 5px 12px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .heroexploreButton:hover {
-    background-color: #F48124;
-  }
-  
-  .heroexploreButton:focus {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
-  }
-  
-  @media (max-width: 991px) {
-    .hero {
-      padding: 100px 20px;
-    }
-    
-    .herocontainer {
-      max-width: 100%;
-    }
-    
-    .herotitle {
-      max-width: 100%;
       font-size: 40px;
-    }
-    
-    .herodescription {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-    
-    .heroexploreButton {
-      margin-top: 40px;
-    }
   }
+
+  .herodescription {
+      font-size: 18px;
+      max-width: 90%;
+      margin-top: 40px;
+  }
+
+  .heroexploreButton {
+      margin-top: 40px;
+  }
+}
+
+/* Mobile View (up to 767px) */
+@media (max-width: 767px) {
+  .hero {
+      padding: 80px 20px;
+  }
+
+  .herocontainer {
+      margin-top: 20px;
+      padding: 0 15px;
+  }
+
+  .herotitle {
+      font-size: 32px;
+  }
+
+  .herodescription {
+      font-size: 16px;
+      max-width: 100%;
+      margin-top: 30px;
+  }
+
+  .heroexploreButton {
+      font-size: 14px;
+      padding: 10px 20px;
+      margin-top: 30px;
+  }
+}
+
+/* Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+  .hero {
+      padding: 60px 15px;
+  }
+
+  .herotitle {
+      font-size: 28px;
+  }
+
+  .herodescription {
+      font-size: 14px;
+      margin-top: 25px;
+  }
+
+  .heroexploreButton {
+      font-size: 14px;
+      padding: 8px 18px;
+  }
+}

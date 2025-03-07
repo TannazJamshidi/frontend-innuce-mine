@@ -2,8 +2,8 @@ import "./Neuromorphic.css";
 
 function Neuromorphic() {
   return (
-    <section className="background-section">
-      <div className="content-box">
+    <section className="Neu-background-section">
+      <div className="Neu-content-box">
         <h1>
           Neuromorphic computing is a cutting-edge field in computer science and
           engineering inspired by the structure and functionality of the human

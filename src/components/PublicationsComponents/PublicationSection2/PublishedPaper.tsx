@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PublishedPaper.css";
-import vectorTick from "../../../assets/VectorTick.svg";
+import PodcastBar from "./PodcastBar"; // Import MusicBar component
+import pdIcon from "../../../assets/play-circle.svg";
 
 interface PublishedPaperProps {
   title: string;
@@ -9,8 +10,6 @@ interface PublishedPaperProps {
   simplifyText: string;
   onOpenPaper: () => void;
   onSimplify: () => void;
-  onCheck: () => void;
-  isChecked: boolean;
 }
 
 const PublishedPaper: React.FC<PublishedPaperProps> = ({
@@ -20,9 +19,13 @@ const PublishedPaper: React.FC<PublishedPaperProps> = ({
   simplifyText,
   onOpenPaper,
   onSimplify,
-  onCheck,
-  isChecked,
 }) => {
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+
+  const toggleMusicBar = () => {
+    setIsMusicPlaying((prev) => !prev);
+  };
+
   return (
     <div className="paper-container" role="article">
       <div className="paper-info">
@@ -33,11 +36,10 @@ const PublishedPaper: React.FC<PublishedPaperProps> = ({
       </div>
       <div className="paper-actions">
         <button
-          className={`check ${isChecked ? "checked" : ""}`}
-          onClick={onCheck}
-          aria-label={isChecked ? "Uncheck paper" : "Check paper"}
+          className={`podcast-button ${isMusicPlaying ? "active" : ""}`}
+          onClick={toggleMusicBar}
         >
-          <img loading="lazy" src={vectorTick} alt="" className="img-icon" />
+          <img src={pdIcon} alt="" />
         </button>
         <button className="button-open-paper" onClick={onOpenPaper}>
           {openPaperText}
@@ -46,6 +48,7 @@ const PublishedPaper: React.FC<PublishedPaperProps> = ({
           {simplifyText}
         </button>
       </div>
+      {isMusicPlaying && <PodcastBar />} {/* Show music bar when playing */}
     </div>
   );
 };

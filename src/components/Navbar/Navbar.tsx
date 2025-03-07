@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { NavItem } from "./NavItem";
 import { useLocation } from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import { useState } from "react";
 
 const navigationItems = [
   { label: "HOME", to: "/" },
@@ -24,11 +25,14 @@ const navigationItems = [
     ],
   },
   { label: "CONTACT US", to: "/contactus" },
-  { label: "NEWS", to: "/news" },
 ];
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className="navbar">
@@ -36,24 +40,26 @@ export const Navigation: React.FC = () => {
         <img loading="lazy" src={logo} className="logo" alt="InNUCE Logo" />
         <div className="brandName">InNUCE</div>
       </div>
-      <div className="navLinks">
+
+      <div className={`navLinks ${menuOpen ? "show" : ""}`}>
         {navigationItems.map((item, index) => {
           const isActive =
-            location.pathname === item.to || // Exact match for direct routes
+            location.pathname === item.to ||
             item.dropdownLinks?.some((link) =>
               location.pathname.startsWith(link.to)
-            ) || // Matches any dropdown link
-            (item.parentTo && location.pathname.startsWith(item.parentTo)); // Matches parent for subroutes
+            ) ||
+            (item.parentTo && location.pathname.startsWith(item.parentTo));
 
-          return (
-            <NavItem
-              key={index}
-              {...item} // Pass all item props
-              isActive={!!isActive} // Pass isActive as boolean
-            />
-          );
+          return <NavItem key={index} {...item} isActive={!!isActive} />;
         })}
       </div>
+
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className={menuOpen ? "bar open" : "bar"}></div>
+        <div className={menuOpen ? "bar open" : "bar"}></div>
+        <div className={menuOpen ? "bar open" : "bar"}></div>
+      </div>
+
       <button className="accessButton">ACCESS APP</button>
     </nav>
   );

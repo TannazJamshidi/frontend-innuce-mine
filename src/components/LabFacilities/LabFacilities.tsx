@@ -28,23 +28,7 @@ export const LabFacilities: React.FC<LabFacilitiesProps> = ({
   return (
     <section className="Facilitycontainer" aria-label="Lab Facilities">
       <div className="Facilitywrapper">
-        <header className="Facilityheader">
-          <img
-            loading="lazy"
-            src={flashHor}
-            alt=""
-            className="FacilityheaderIconB"
-            aria-hidden="true"
-          />
-          <h1 className="Facilitytitle">LAB FACILITIES</h1>
-          <img
-            loading="lazy"
-            src={flashHor}
-            alt=""
-            className="FacilityheaderIconF"
-            aria-hidden="true"
-          />
-        </header>
+        <header className="Facilityheader">LAB FACILITIES</header>
         <div className="FacilitycardGrid">
           {facilities.map((facility, index) => (
             <div key={facility.title} className="FacilitycardColumn">

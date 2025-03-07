@@ -1,32 +1,21 @@
 .Pubheader {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../../../assets/PubHeaderImg.png');
-    background-size:cover;
-    height: 785px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../assets/PubHeaderImg.png");
+  background-size: cover;
+  height: 750px;
+  align-items: center;
+}
 
-  }
-  
-  
+.PubHeadertitle {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  margin-top: 200px;
+}
+
+@media (max-width: 991px) {
   .PubHeadertitle {
-    font-size: 48px;
-    font-weight: 600;
-    color: white;
-    margin-top: 200px;
-   
+    font-size: 24px;
   }
-  
-  
-  @media (max-width: 991px) {
-    .PubHeadercontainer {
-      max-width: 100%;
-      padding: 100px 20px;
-    }
-  
-    .PubHeadertitle {
-      font-size: 40px;
-    }
-  
-    
-  }
+}

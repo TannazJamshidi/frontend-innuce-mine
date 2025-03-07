@@ -14,7 +14,7 @@ const FooterContent: React.FC = () => {
   return (
     <div className="footerall">
       <div className="footerContent">
-        <div className="navigationLinks">
+        <div className="footerCol">
           <a href="/">HOME</a>
           <a href="/Infrastructures">SERVICES</a>
           <a href="/AboutUs">ABOUT US</a>
@@ -23,12 +23,12 @@ const FooterContent: React.FC = () => {
           <a href="/news">NEWS</a>
         </div>
 
-        <div className="directorsInfo">
+        <div className="footerCol">
           MANAGING DIRECTORS :<br />
           Corem ipsum <br />
           dolor sit
         </div>
-        <div className="socialMediaLinks">
+        <div className="footerCol">
           <div>FOLLOW US </div>
           <a href="https://linkdin.com">
             <img
@@ -57,7 +57,7 @@ const FooterContent: React.FC = () => {
             />
           </a>
         </div>
-        <div className="contactInfo">
+        <div className="footerCol">
           ADDRESS :<br />
           Corso Castelfidardo, 34/d, 10138 Torino TO, Italy
           <br />

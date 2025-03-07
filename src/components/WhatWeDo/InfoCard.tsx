@@ -13,21 +13,21 @@ export const InfoCard: React.FC<InfoCardProps> = ({
   content,
 }) => {
   return (
-    <div className="column">
-      <div className="card">
-        <div className="header">
-          <div className="titleWrapper">
-            <div className="our">Our</div>
-            <div className="title">{title}</div>
+    <div className="InfoCardcolumn">
+      <div className="InfoCardcard">
+        <div className="InfoCardheader">
+          <div className="InfoCardtitleWrapper">
+            <div className="InfoCardour">Our</div>
+            <div className="InfoCardtitle">{title}</div>
           </div>
           <img
             loading="lazy"
             src={iconSrc}
-            className="icon"
-            alt={`${title} icon`}
+            className="InfoCardicon"
+            alt={`${title} InfoCardicon`}
           />
         </div>
-        <div className="content">{content}</div>
+        <div className="InfoCardcontent">{content}</div>
       </div>
     </div>
   );

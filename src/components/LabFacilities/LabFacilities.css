@@ -1,5 +1,8 @@
 .Facilitycontainer {
-    background-color: rgba(222, 217, 225, 1);
+    background-image: url("../../assets/GroupLinesFacilities.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center calc(0% + 20px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,43 +19,17 @@
   
   .Facilityheader {
     display: flex;
-    width: 883px;
-    max-width: 100%;
-    align-items: center;
-    gap: 20px;
-    align-self: center;
-    justify-content: space-between;
-  }
-  
-  .FacilityheaderIconB {
-    aspect-ratio: 1.5;
-    object-fit: contain;
-    object-position: center;
-    width: 48px;
-    align-self: stretch;
-    margin: auto 0;
-  }
-
-  .FacilityheaderIconF {
-    aspect-ratio: 1.5;
-    transform: scaleX(-1);
-    object-fit: contain;
-    object-position: center;
-    width: 48px;
-    align-self: stretch;
-    margin: auto 0;
-  }
-  .FacilityheaderIconF:hover{
-    color: #F48124;
-  }
-  
-  .Facilitytitle {
+    margin: auto;
     color: rgba(0, 43, 73, 1);
     text-align: center;
     font-size: 48px; 
     font-weight: 600;
-    margin: 0;
+    
   }
+  
+  
+  
+  
   
   .FacilitycardGrid {
     margin-top: 140px;
@@ -102,13 +79,17 @@
     .Facilitycontainer {
       padding: 100px 20px;
     }
+
+    .Facilityheader {
+      font-size: 28px;
+    }
   
     .Facilitywrapper {
       max-width: 100%;
     }
   
-    .Facilitytitle {
-      font-size: 40px;
+    .FcardTitle {
+      font-size: 28 px;
     }
   
     .FacilitycardGrid {
@@ -116,6 +97,10 @@
       align-items: stretch;
       gap: 0;
       margin-top: 40px;
+    }
+
+    .FcardDescription{
+      font-size: 14px;
     }
   
     .FacilitycardColumn {
