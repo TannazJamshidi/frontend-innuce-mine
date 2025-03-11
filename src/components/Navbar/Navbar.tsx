@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { NavItem } from "./NavItem";
 import { useLocation } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logoWhite.svg";
 import { useState } from "react";
 
 const navigationItems = [
@@ -36,11 +36,7 @@ export const Navigation: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <div className="logoContainer">
-        <img loading="lazy" src={logo} className="logo" alt="InNUCE Logo" />
-        <div className="brandName">InNUCE</div>
-      </div>
-
+      <img loading="lazy" src={logo} className="logo" alt="InNUCE Logo" />
       <div className={`navLinks ${menuOpen ? "show" : ""}`}>
         {navigationItems.map((item, index) => {
           const isActive =

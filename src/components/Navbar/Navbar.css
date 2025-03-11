@@ -1,6 +1,6 @@
 /* General Navbar Styles */
 .navbar {
-  background-color: #002B49;
+  background-color: #002b49;
   position: fixed;
   width: 100%;
   height: 75px;
@@ -11,34 +11,18 @@
   z-index: 10; /* Ensure navbar stays on top */
 }
 
-/*logo and brandname*/
-.logoContainer {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
 .logo {
-  aspect-ratio: 1.07;
-  width: 50px;
-}
-
-.brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #fff;
+  width: 180px;
 }
 
 /* container for navItems */
 .navLinks {
   display: flex;
-  gap: 30px; 
+  gap: 30px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  
 }
-
 
 .navItem {
   position: relative; /* Required for positioning dropdown */
@@ -46,19 +30,18 @@
 }
 
 .navItem.active .navLabel {
-  color: #F48124; /* Orange color for the active item */
+  color: #f48124; /* Orange color for the active item */
 }
 
-
-.navItem .navLabel { /*text of navItem*/
+.navItem .navLabel {
+  /*text of navItem*/
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
 }
 
-
 .navItem:hover .navLabel {
-  color: #F48124;
+  color: #f48124;
 }
 
 /* Dropdown Icon */
@@ -71,9 +54,8 @@
 }
 
 .dropdownMenu {
-  
-  background-color: #002B49;
-  padding-top: 15px ;
+  background-color: #002b49;
+  padding-top: 15px;
   position: absolute;
   top: 100%; /* Aligns dropdown directly below the nav item */
   left: -15px;
@@ -94,11 +76,9 @@
   text-align: left;
 }
 
-
 .dropdownLink:hover {
-  color: #F48124;
+  color: #f48124;
 }
-
 
 .accessButton {
   border-radius: 15px;
@@ -112,7 +92,7 @@
 }
 
 .accessButton:hover {
-  background-color: #F48124;
+  background-color: #f48124;
   color: #fff;
 }
 
@@ -123,7 +103,8 @@
   cursor: pointer;
 }
 
-.hamburger div { /*line of hamburger*/
+.hamburger div {
+  /*line of hamburger*/
   width: 25px;
   height: 3px;
   background-color: white;
@@ -145,7 +126,6 @@
     padding: 10px 15px;
     display: flex;
     position: fixed;
-    
   }
 
   .dropdownLink {
@@ -165,7 +145,7 @@
     top: 80px;
     right: 0;
     width: 150px;
-    background-color: #002B49;
+    background-color: #002b49;
     border-radius: 15px;
     padding: 20px;
     z-index: 100;
@@ -175,24 +155,14 @@
     display: flex; /* Show nav links when the menu is open */
   }
 
-  
-
-  .accessButton{
-    font-size: 14px;
-    margin-right: 50px;
+  .accessButton {
+    display: none;
   }
 
-  .brandName{
+  .navLabel {
     font-size: 14px;
   }
-
-  .navLabel{
-    font-size: 14px;
+  .logo {
+    width: 150px;
   }
-
-  .logoContainer{
-    gap: 5px;
-  }
-
-  
 }

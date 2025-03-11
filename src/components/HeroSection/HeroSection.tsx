@@ -1,9 +1,18 @@
 import React from "react";
 import "./HeroSection.css";
+import video from "../../assets/videoHome.mp4";
 
 const HeroSection: React.FC = () => {
   return (
     <section className="hero">
+      <video
+        src={video}
+        className="videoHome"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
       <div className="herocontainer">
         <h1 className="herotitle">
           Hybrid HPC
