@@ -21,7 +21,8 @@ const HeroSection: React.FC = () => {
         </h2>
         <p>
           Bring your brain-inspired projects to life with our own Cloud-Based
-          <b> Neuromorphic Prototyping Platform</b>. Know more about our
+          <b> Neuromorphic Prototyping Platform</b>.<br></br> Know more about
+          our
           <b> software tools</b>, discover our <b> development services</b> or
           just take a look at our <b>use cases</b>.
         </p>

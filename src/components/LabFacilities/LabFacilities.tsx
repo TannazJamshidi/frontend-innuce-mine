@@ -11,14 +11,8 @@ const defaultFacilities = [
   {
     title: "Heterogeneous Prototyping Platform",
     description:
-      "Prototype your applications in the cloud with cutting-edge <strong>Neuromorphic HW/SW</strong> solutions. From concept to deployment, with a platform designed for all skill levels, from AI enthusiasts to neuromorphic ninjas.",
+      "Prototype your applications in the cloud with cutting-edge Neuromorphic HW/SW solutions. From concept to deployment, with a platform designed for all skill levels, from AI enthusiasts to neuromorphic ninjas.",
     iconSRC: icon1,
-  },
-  {
-    title: "Neuromorphic App support service",
-    description:
-      "Need for external hardware, sensors implementation, or just some advice? Our team of experts is ready to welcome you in our lab. Contact us to check out our range of Event Cameras, microcontrollers, MEMS and FPGAs.",
-    iconSRC: icon2,
   },
   {
     title: "Neuromorphic Software Modules",
@@ -27,9 +21,16 @@ const defaultFacilities = [
     iconSRC: icon3,
   },
   {
+    title: "Neuromorphic App support service",
+    description:
+      "Need external hardware, sensors, or expert advice? Our team is ready to assist you! Contact us to explore our range of Event Cameras, microcontrollers, MEMS, and FPGAs.",
+    iconSRC: icon2,
+  },
+
+  {
     title: "Neuromorphic Use Cases",
     description:
-      "Benefit from our set of software tools for all of your spiking needs. From spike encoding of floating point data, to SNN inference on microcontrollers, going through innovative spiking network architectures: we got you covered.",
+      "Curious about our technologies or in the need for inspiration? Explore our gallery of use cases, from Human Activity Recognition to GPS localization, and discover what is possible!",
     iconSRC: icon4,
   },
 ];

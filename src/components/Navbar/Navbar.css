@@ -121,8 +121,11 @@
   /*line of hamburger*/
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #002b49;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar.scrolled .hamburger div {
+  background-color: #fff;
 }
 
 .hamburger .bar.open:nth-child(1) {
@@ -152,7 +155,7 @@
     top: 27px;
   }
 
-  .navLinks {
+  .LinksContainer {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -164,8 +167,12 @@
     padding: 20px;
     z-index: 100;
   }
+  .NavLink,
+  .dropdownIcon {
+    color: #fff;
+  }
 
-  .navLinks.show {
+  .LinksContainer.show {
     display: flex; /* Show nav links when the menu is open */
   }
 

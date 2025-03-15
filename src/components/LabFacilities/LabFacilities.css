@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 991px) {
+  .facilityCard {
+    width: 400px;
+  }
   .facilityCardDes h2 {
     font-size: 25px;
   }
