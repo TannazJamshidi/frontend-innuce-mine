@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { NavItemProps } from "./types";
-import flashIcon from "../../assets/flash.svg";
 
 export const NavItem: React.FC<NavItemProps & { isActive: boolean }> = ({
   label,
@@ -18,23 +17,26 @@ export const NavItem: React.FC<NavItemProps & { isActive: boolean }> = ({
 
   return (
     <div
-      className={`navItem ${isActive ? "active" : ""}`} // Add active class when isActive is true
+      className={`NavLink ${isActive ? "active" : ""}`} // Add active class when isActive is true
       tabIndex={0}
       role="navigation"
       onMouseEnter={showDropdown} // Show dropdown on hover
       onMouseLeave={hideDropdown} // Hide dropdown on mouse leave
     >
-      <Link to={to || "#"} className="navLabel">
+      <Link to={to || "#"} className="LinkLabel">
         {label}
       </Link>
       {hasDropdown && (
         <>
-          <img
-            loading="lazy"
-            src={flashIcon}
+          <svg
             className="dropdownIcon"
-            alt="Dropdown Icon"
-          />
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M12 15.5l-6-6 1.4-1.4L12 12.7l4.6-4.6 1.4 1.4z" />
+          </svg>
+
           {isDropdownVisible && (
             <div
               className="dropdownMenu"

@@ -1,8 +1,10 @@
 import "./Navbar.css";
 import { NavItem } from "./NavItem";
 import { useLocation } from "react-router-dom";
-import logo from "../../assets/logoWhite.svg";
-import { useState } from "react";
+import logoW from "../../assets/inNuceWhite.svg";
+import logoB from "../../assets/inNuceBW.svg";
+
+import { useState, useEffect } from "react";
 
 const navigationItems = [
   { label: "HOME", to: "/" },
@@ -30,14 +32,37 @@ const navigationItems = [
 export const Navigation: React.FC = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true); // Set background to blue when scrolled
+    } else {
+      setScrolled(false); // Reset to transparent when at the top
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
-      <img loading="lazy" src={logo} className="logo" alt="InNUCE Logo" />
-      <div className={`navLinks ${menuOpen ? "show" : ""}`}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <img
+        loading="lazy"
+        src={scrolled ? logoW : logoB}
+        className="logo"
+        alt="InNUCE Logo"
+      />
+      <div className={`LinksContainer ${menuOpen ? "show" : ""}`}>
         {navigationItems.map((item, index) => {
           const isActive =
             location.pathname === item.to ||

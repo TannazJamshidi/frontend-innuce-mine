@@ -5,11 +5,15 @@ import { FacilityCardProps } from "./types";
 export const FacilityCard: React.FC<FacilityCardProps> = ({
   title,
   description,
+  iconSRC,
 }) => {
   return (
     <div className="facilityCard" role="article">
-      <h2 className="FcardTitle">{title}</h2>
-      <p className="FcardDescription">{description}</p>
+      <img src={iconSRC} alt="" />
+      <div className="facilityCardDes">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
     </div>
   );
 };

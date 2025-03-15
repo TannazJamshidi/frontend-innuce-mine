@@ -1,28 +1,10 @@
 .AboutUsheader {
   display: flex;
   flex-direction: column;
-  background-image: url("../../../assets/AboutUsHeader.png");
+  background-image: url("../../../assets/aboutUsImg.jpg");
+  filter: opacity(80%);
   background-size: cover;
-  align-items: center;
-  gap: 150px;
-  padding: 200px;
-}
-
-.AboutUstitle {
-  font-size: 48px;
-  font-weight: 600;
-  color: white;
-}
-
-.AboutUsdescription {
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #002b49;
-  padding: 10px;
-  text-align: center;
+  height: 100vh;
 }
 
 /* Responsive Styles for 991px */

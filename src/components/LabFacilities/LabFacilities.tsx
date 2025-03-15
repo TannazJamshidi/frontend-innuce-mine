@@ -2,23 +2,35 @@ import React from "react";
 import "./LabFacilities.css";
 import { FacilityCard } from "./FacilityCard";
 import { LabFacilitiesProps } from "./types";
-import flashHor from "../../assets/flashHor.svg";
+import icon1 from "../../assets/icon1.svg";
+import icon2 from "../../assets/icon2.svg";
+import icon3 from "../../assets/icon3.svg";
+import icon4 from "../../assets/icon4.svg";
 
 const defaultFacilities = [
   {
-    title: "Advance Tools",
+    title: "Heterogeneous Prototyping Platform",
     description:
-      "Welcome to our Neuromorphic Research Lab, where innovation drives exploration! Our cutting-edge facility features advanced tools for developing and testing neuromorphic chips, along with high-performance workstations for simulating and modeling neural networks.",
+      "Prototype your applications in the cloud with cutting-edge <strong>Neuromorphic HW/SW</strong> solutions. From concept to deployment, with a platform designed for all skill levels, from AI enthusiasts to neuromorphic ninjas.",
+    iconSRC: icon1,
   },
   {
-    title: "Powerful Software",
+    title: "Neuromorphic App support service",
     description:
-      "We provide a powerful software ecosystem tailored for neuromorphic computing, enabling real-time experiments, efficient programming, and large-scale data analysis. Our tools empower researchers to push the boundaries of computational neuroscience and machine learning.",
+      "Need for external hardware, sensors implementation, or just some advice? Our team of experts is ready to welcome you in our lab. Contact us to check out our range of Event Cameras, microcontrollers, MEMS and FPGAs.",
+    iconSRC: icon2,
   },
   {
-    title: "Collaborative Space",
+    title: "Neuromorphic Software Modules",
     description:
-      "Collaboration fuels our breakthroughs. With integrated spaces for biologists, engineers, and computer scientists, we support interdisciplinary innovation. From wet labs to prototyping stations, our lab is equipped to advance robotics, AI, and cognitive computing.",
+      "Benefit from our set of software tools for all of your spiking needs. From spike encoding of floating point data, to SNN inference on microcontrollers, going through innovative spiking network architectures: we got you covered.",
+    iconSRC: icon3,
+  },
+  {
+    title: "Neuromorphic Use Cases",
+    description:
+      "Benefit from our set of software tools for all of your spiking needs. From spike encoding of floating point data, to SNN inference on microcontrollers, going through innovative spiking network architectures: we got you covered.",
+    iconSRC: icon4,
   },
 ];
 
@@ -26,20 +38,19 @@ export const LabFacilities: React.FC<LabFacilitiesProps> = ({
   facilities = defaultFacilities,
 }) => {
   return (
-    <section className="Facilitycontainer" aria-label="Lab Facilities">
-      <div className="Facilitywrapper">
-        <header className="Facilityheader">LAB FACILITIES</header>
-        <div className="FacilitycardGrid">
-          {facilities.map((facility, index) => (
-            <div key={facility.title} className="FacilitycardColumn">
-              <FacilityCard
-                title={facility.title}
-                description={facility.description}
-              />
-            </div>
-          ))}
-        </div>
+    <div className="Facilitycontainer" aria-label="Lab Facilities">
+      <h1>LAB FACILITIES</h1>
+      <div className="FacilitycardGrid">
+        {facilities.map((facility, index) => (
+          <div key={facility.title}>
+            <FacilityCard
+              title={facility.title}
+              description={facility.description}
+              iconSRC={facility.iconSRC}
+            />
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };

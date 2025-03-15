@@ -9,25 +9,23 @@ import s3 from "../../assets/supporter3.png";
 import s4 from "../../assets/supporter4.png";
 import s5 from "../../assets/supporter5.png";
 import s6 from "../../assets/supporter6.png";
+import inNuCe from "../../assets/inNuceWhite.svg";
 
 const FooterContent: React.FC = () => {
   return (
     <div className="footerall">
       <div className="footerContent">
+        <img className="inNuCEFooter" loading="lazy" src={inNuCe} />
+        <div className="footerLineV" />
         <div className="footerCol">
           <a href="/">HOME</a>
           <a href="/Infrastructures">SERVICES</a>
           <a href="/AboutUs">ABOUT US</a>
           <a href="/Publications">PUBLICATIONS</a>
           <a href="/ContactUs">CONTACT US</a>
-          <a href="/news">NEWS</a>
+          <a href="/credits">CREDITS</a>
         </div>
 
-        <div className="footerCol">
-          MANAGING DIRECTORS :<br />
-          Corem ipsum <br />
-          dolor sit
-        </div>
         <div className="footerCol">
           <div>FOLLOW US </div>
           <a href="https://linkdin.com">
@@ -61,12 +59,13 @@ const FooterContent: React.FC = () => {
           ADDRESS :<br />
           Corso Castelfidardo, 34/d, 10138 Torino TO, Italy
           <br />
+          <br />
           EMAIL ADDRESS :<br />
           innuce@poito.it
         </div>
       </div>
       {/* Horizontal Line */}
-      <div className="footerLine" />
+      <div className="footerLineH" />
       <div className="supporters">
         <img className="S" src={s4} alt="" />
         <img className="S" src={s2} alt="" />
