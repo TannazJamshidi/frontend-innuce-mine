@@ -1,48 +1,42 @@
+/*item style*/
 .itemContainer {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
-.itemicon {
-  aspect-ratio: 1;
-  object-fit: contain;
-  width: 35px;
-}
-
-.itemdescription {
-  font-size: 20px;
+.itemdescription h1 {
+  font-size: 30px;
   font-weight: 400;
+  color: #f48124;
 }
 
+.itemdescription p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*about us section2 style*/
 .AboutusS2container {
   display: flex;
-
-  background-color: #ded9e1;
+  background-color: white;
   justify-content: center;
-  padding: 140px 0;
-  gap: 100px;
-}
-
-.AboutusS2mainImage {
-  position: relative;
-  width: 670px;
-  height: 670px;
-
-  border-radius: 15px;
+  gap: 50px;
+  padding: 140px 0 140px 0;
 }
 
 .AboutusS2content {
   display: flex;
-  flex-direction: column; /* Stack the children vertically */
-  height: 680px; /* Set the total height */
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+  width: 40%;
   color: #002b49;
   text-align: left;
-  width: 524px;
-  height: 670px;
 }
 
+.AboutusS2mainImage {
+  object-fit: contain;
+  width: 50%;
+}
 @media (max-width: 991px) {
   .AboutusS2container {
     flex-direction: column;

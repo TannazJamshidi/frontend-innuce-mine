@@ -1,5 +1,6 @@
 export interface NeuromorphicItemProps {
     icon: string;
+    title:string;
     description: string;
   }
   
