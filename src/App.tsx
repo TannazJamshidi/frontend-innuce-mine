@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation, } from "react-router-dom";
+import { /*BrowserRouter as Router,*/ Routes, Route, useLocation, } from "react-router-dom";
 import { Navigation } from "./components/Navbar/Navbar";
 import HomePage from "./pages/HomePage";
-import Infrastructures from "./pages/Infrastructures";
+// import Infrastructures from "./pages/Infrastructures";
 import AboutUs from "./pages/AboutUs";
-import Publications from "./pages/Publications";
-import ContactUs from "./pages/ContactUs";
-import UseCasesPage from "./pages/UseCasesPage";
+// import Publications from "./pages/Publications";
+// import ContactUs from "./pages/ContactUs";
+// import UseCasesPage from "./pages/UseCasesPage";
 import FooterContent from "./components/Footer/FooterContent";
 import { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";

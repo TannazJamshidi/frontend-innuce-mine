@@ -1,6 +1,6 @@
 import React from "react";
 import "./InfraHeader.css";
-import brain from "../../../assets/brain.gif";
+// import brain from "../../../assets/brain.gif";
 import infographic from "../../../assets/infographic.svg";
 
 const InfraHeader: React.FC = () => {
@@ -26,7 +26,7 @@ const InfraHeader: React.FC = () => {
         </p>
         <button
           className="LaunchButton"
-          onClick={() => {}}
+          onClick={() => { }}
           tabIndex={0}
           aria-label="Launch The prototyping Platform"
         >
@@ -34,7 +34,7 @@ const InfraHeader: React.FC = () => {
         </button>
         <button
           className="DiscoverButton"
-          onClick={() => {}}
+          onClick={() => { }}
           tabIndex={0}
           aria-label="Discover Our Tools and Softwares"
         >

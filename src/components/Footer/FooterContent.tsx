@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Footer.css";
 import HF from "../../assets/huggingface.svg";
 import GitHub from "../../assets/github.svg";
-import ld from "../../assets/linkdin.svg";
+// import ld from "../../assets/linkdin.svg";
 import s1 from "../../assets/supporter1.png";
 import s2 from "../../assets/supporter2.png";
 import s3 from "../../assets/supporter3.png";
