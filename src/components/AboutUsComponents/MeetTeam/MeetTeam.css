@@ -3,7 +3,8 @@
     linear-gradient(rgba(0, 43, 73, 0.3), rgba(135, 171, 193, 0.3));
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center;
-  background-size: contain, contain; /* SVG should scale while gradient covers the section */
+  background-size: contain, contain;
+  /* SVG should scale while gradient covers the section */
   display: flex;
   flex-direction: column;
 
@@ -31,9 +32,11 @@
   .teamSection {
     padding-top: 50px;
   }
+
   .teamSection h1 {
     font-size: 40px;
   }
+
   .members {
     grid-template-columns: repeat(1, 1fr);
     margin: 50px 20px;
@@ -51,9 +54,29 @@
   cursor: pointer;
 }
 
+.memberImage {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  mask-image: url('../../../assets/members/member_brain_shape.svg');
+  -webkit-mask-image: url('../../../assets/members/member_brain_shape.svg');
+  mask-size: contain;
+  /* Adatta il SVG all'immagine */
+  -webkit-mask-size: contain;
+
+  mask-position: center;
+  /* Centra il SVG */
+  -webkit-mask-position: center;
+
+  mask-repeat: no-repeat;
+  /* Non ripetere il SVG */
+  -webkit-mask-repeat: no-repeat;
+}
+
 .memberCard:hover {
   transform: translateY(-5px);
 }
+
 .memberInfo {
   color: rgba(0, 43, 73, 1);
 }
@@ -96,4 +119,8 @@
   .members {
     justify-content: center;
   }
+}
+
+.linkedinLogo {
+  width: 60px;
 }

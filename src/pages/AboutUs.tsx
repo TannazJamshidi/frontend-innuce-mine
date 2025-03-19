@@ -9,7 +9,6 @@ function AboutUs() {
       <AboutUsHeader></AboutUsHeader>
       <NeuromorphicSection></NeuromorphicSection>
       <MeetTeam></MeetTeam>
-      <FooterContent></FooterContent>
     </div>
   );
 }

@@ -13,12 +13,12 @@ const navigationItems = [
     hasDropdown: true,
     parentTo: "/services",
     dropdownLinks: [
-      { label: "INFRASTRUCTURES", to: "/infrastructures" },
-      { label: "USE CASES", to: "/usecases" },
+      { label: "INFRASTRUCTURES", to: " " },
+      { label: "USE CASES", to: " " },
     ],
   },
   { label: "RESEARCH", to: "" },
-  { label: "ABOUT US", to: "" },
+  { label: "ABOUT US", to: "/aboutus" },
 ];
 
 export const Navigation: React.FC = () => {
