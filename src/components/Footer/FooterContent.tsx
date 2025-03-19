@@ -28,16 +28,16 @@ const FooterContent: React.FC = () => {
 
         <div className="footerCol">
           <div>FOLLOW US </div>
-          <a href="https://linkdin.com">
+          {/* <a href="">
             <img
               loading="lazy"
               src={ld}
               className="socialMediaIcon"
               alt="linkdin"
             />
-          </a>
+          </a> */}
 
-          <a href="https://github.com">
+          <a href="https://github.com/neuromorphic-polito">
             <img
               loading="lazy"
               src={GitHub}
@@ -46,7 +46,7 @@ const FooterContent: React.FC = () => {
             />
           </a>
 
-          <a href="https://huggingface.com">
+          <a href="https://huggingface.co/neuromorphic-polito">
             <img
               loading="lazy"
               src={HF}
@@ -57,11 +57,11 @@ const FooterContent: React.FC = () => {
         </div>
         <div className="footerCol">
           ADDRESS :<br />
-          Corso Castelfidardo, 34/d, 10138 Torino TO, Italy
+          Corso Duca degli Abruzzi, 24, 10129 Torino TO, Italy
           <br />
           <br />
           EMAIL ADDRESS :<br />
-          innuce@poito.it
+          innuce@polito.it
         </div>
       </div>
       {/* Horizontal Line */}

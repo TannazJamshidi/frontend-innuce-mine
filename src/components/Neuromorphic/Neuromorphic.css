@@ -1,3 +1,11 @@
+.Neu-content-box p {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 23px;
+  text-align: left;
+  color: rgba(0, 43, 73, 1);
+}
+
 .Neu-background-section {
   position: relative;
   width: 100%;

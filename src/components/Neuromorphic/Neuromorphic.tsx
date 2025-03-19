@@ -1,10 +1,10 @@
 import "./Neuromorphic.css";
-
+import { TEXT } from "./constants";
 function Neuromorphic() {
   return (
     <section className="Neu-background-section">
       <div className="Neu-content-box">
-        <h1></h1>
+        <p>{TEXT}</p>
       </div>
     </section>
   );

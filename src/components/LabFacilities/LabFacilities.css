@@ -1,4 +1,7 @@
 /*facility section*/
+strong {
+  font-weight: 700;
+}
 
 .Facilitycontainer {
   background-image: url("../../assets/GroupLinesFacilities.svg");
@@ -31,9 +34,11 @@
   .Facilitycontainer {
     padding-top: 50px;
   }
+
   .Facilitycontainer h1 {
     font-size: 40px;
   }
+
   .FacilitycardGrid {
     grid-template-columns: repeat(1, 1fr);
     margin: 50px 20px;
@@ -84,6 +89,7 @@
   .facilityCard {
     width: 400px;
   }
+
   .facilityCardDes h2 {
     font-size: 25px;
   }

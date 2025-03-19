@@ -17,16 +17,8 @@ const navigationItems = [
       { label: "USE CASES", to: "/usecases" },
     ],
   },
-  {
-    label: "ABOUT US",
-    hasDropdown: true,
-    parentTo: "/aboutus",
-    dropdownLinks: [
-      { label: "ABOUT US", to: "/aboutus" },
-      { label: "PUBLICATIONS", to: "/publications" },
-    ],
-  },
-  { label: "CONTACT US", to: "/contactus" },
+  { label: "RESEARCH", to: "" },
+  { label: "ABOUT US", to: "" },
 ];
 
 export const Navigation: React.FC = () => {

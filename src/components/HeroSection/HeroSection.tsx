@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./HeroSection.css";
-import video from "../../assets/videoHome.mp4";
+import { BACKGROUND } from "./constants";
+import Particles from "@tsparticles/react";
+import {
+  type Container,
+  type ISourceOptions,
+} from "@tsparticles/engine";
 
 const HeroSection: React.FC = () => {
+
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log(container);
+  };
+
+  const options: ISourceOptions = useMemo(
+    () => (BACKGROUND),
+    [],
+  );
+
   return (
     <section className="hero">
-      <video
-        src={video}
-        className="videoHome"
-        autoPlay
-        loop
-        muted
-        playsInline
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
       />
       <div className="herocontainer">
         <h1>inNuCE Lab</h1>
@@ -27,10 +39,10 @@ const HeroSection: React.FC = () => {
           just take a look at our <b>use cases</b>.
         </p>
         <div className="buttons">
-          <button onClick={() => {}} tabIndex={0}>
+          <button onClick={() => { }} tabIndex={0}>
             KNOW MORE
           </button>
-          <button onClick={() => {}} tabIndex={0}>
+          <button onClick={() => { }} tabIndex={0}>
             FOLLOW US
           </button>
         </div>
