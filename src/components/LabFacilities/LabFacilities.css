@@ -1,120 +1,96 @@
+/*facility section*/
+strong {
+  font-weight: 700;
+}
+
 .Facilitycontainer {
-    background-image: url("../../assets/GroupLinesFacilities.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center calc(0% + 20px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 80px;
-    overflow: hidden;
+  background-image: url("../../assets/GroupLinesFacilities.svg");
+  background-color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center calc(0%);
+  display: flex;
+  flex-direction: column;
+}
+
+.Facilitycontainer h1 {
+  color: rgba(0, 43, 73, 1);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+
+.FacilitycardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-self: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+@media (max-width: 991px) {
+  .Facilitycontainer {
+    padding-top: 50px;
   }
-  
-  .Facilitywrapper {
-    display: flex;
-    width: 100%;
-    max-width: 1206px;
-    flex-direction: column;
+
+  .Facilitycontainer h1 {
+    font-size: 40px;
   }
-  
-  .Facilityheader {
-    display: flex;
-    margin: auto;
-    color: rgba(0, 43, 73, 1);
-    text-align: center;
-    font-size: 48px; 
-    font-weight: 600;
-    
-  }
-  
-  
-  
-  
-  
+
   .FacilitycardGrid {
-    margin-top: 140px;
-    display: flex;
-    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 20px;
   }
-  
-  .FacilitycardColumn {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    align-items: stretch;
-    border: 2px solid transparent; /* Initial border for smooth transition */
-    border-radius: 15px;
-    transition: border-color 0.2s ease; /* Smooth hover effect */
-  }
-  .FacilitycardColumn:hover {
-    border-color: #F48124; /* Orange border on hover */
-  }
-  
+}
+
+/*facility card*/
+.facilityCard {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 43, 73, 1);
+  width: 500px;
+}
+
+.facilityCard img {
+  width: 150px;
+  height: 200px;
+  margin: auto;
+  padding: 10px 0 10px 0;
+}
+
+.facilityCardDes {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(244, 149, 36, 0.7);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  gap: 20px;
+  height: 350px;
+}
+
+.facilityCardDes h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.facilityCard p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
   .facilityCard {
-    display: flex;
-    flex-direction: column;
-    color: rgba(0, 43, 73, 1);
-    text-align: center;
-    
-    padding: 20px;
+    width: 400px;
   }
-  
-  
-  .FcardTitle {
-    font-size: 32px;
-    font-weight: 400;
-    margin: 0;
-    align-self: center;
-  }
-  
-  .FcardDescription {
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 20px;
-    margin-bottom: 0;
-    line-height: 1.5;
-  }
-  
-  @media (max-width: 991px) {
-    .Facilitycontainer {
-      padding: 100px 20px;
-    }
 
-    .Facilityheader {
-      font-size: 28px;
-    }
-  
-    .Facilitywrapper {
-      max-width: 100%;
-    }
-  
-    .FcardTitle {
-      font-size: 28 px;
-    }
-  
-    .FacilitycardGrid {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
-      margin-top: 40px;
-    }
-
-    .FcardDescription{
-      font-size: 14px;
-    }
-  
-    .FacilitycardColumn {
-      width: 100%;
-      margin-top: 40px;
-    }
-  
-    .FacilitycardColumn:first-child {
-      margin-top: 0;
-    }
+  .facilityCardDes h2 {
+    font-size: 25px;
   }
-  
-  @media (forced-colors: active) {
-    .FacilityheaderIcon {
-      forced-color-adjust: none;
-    }
-  }
+}

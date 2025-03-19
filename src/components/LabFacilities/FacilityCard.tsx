@@ -2,14 +2,19 @@ import React from "react";
 import "./LabFacilities.css";
 import { FacilityCardProps } from "./types";
 
-export const FacilityCard: React.FC<FacilityCardProps> = ({
-  title,
-  description,
-}) => {
+export const FacilityCard: React.FC<FacilityCardProps> = ({ title, description, boldKeywords, iconSRC }) => {
+  const regex = new RegExp(`(${boldKeywords.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join("|")})`, "gi");
   return (
     <div className="facilityCard" role="article">
-      <h2 className="FcardTitle">{title}</h2>
-      <p className="FcardDescription">{description}</p>
+      <img src={iconSRC} alt="" />
+      <div className="facilityCardDes">
+        <h2>{title}</h2>
+        <p>
+          {
+            description.split(regex).map(s => boldKeywords.includes(s) ? <strong>{s} </strong> : s + " ")
+          }
+        </p>
+      </div>
     </div>
   );
 };

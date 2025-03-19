@@ -1,38 +1,31 @@
 import React from "react";
 import { InfoCard } from "./InfoCard";
 import "./WhatWeDoSection.css";
-import missionIcon from "../../assets/mission.gif";
-import aimIcon from "../../assets/aim.gif";
-import locationIcon from "../../assets/location.gif";
+import infoImg1 from "../../assets/brainImg.svg";
+import infoImg2 from "../../assets/infoImg2.svg";
+import infoImg3 from "../../assets/infoImg3.svg";
 
 export const WhatWeDoSection: React.FC = () => {
   return (
-    <div className="WWDdiv">
-      <div className="whatWeDo">WHAT WE DO</div>
-      <div className="WWDdescription">
-        The InNUCE Lab is dedicated to advancing research in neuromorphic
-        computing and artificial intelligence. We focus on developing innovative
-        hardware and software systems that mimic neural networks, enabling
-        efficient, low-power solutions for complex computational tasks.
-      </div>
-      <div className="WWDcardsContainer">
-        <div className="WWDcardsGrid">
-          <InfoCard
-            title="MISSION"
-            iconSrc={missionIcon}
-            content="is to bridge the gap between neuroscience and technology, fostering breakthroughs in cognitive computing, robotics, and adaptive systems."
-          />
-          <InfoCard
-            title="AIM"
-            iconSrc={aimIcon}
-            content="we aim to create transformative applications in areas such as autonomous systems, health monitoring, and smart environments."
-          />
-          <InfoCard
-            title="LOCATION"
-            iconSrc={locationIcon}
-            content="InNUCE is located within the DAUIN Department (Department of Control and Computer Engineering) at the Politecnico di Torino, in Turin, Italy."
-          />
-        </div>
+    <div className="WWDContainer">
+      <h1>OUR APPLICATION DOMAINS</h1>
+
+      <div className="WWDcardsGrid">
+        <InfoCard
+          title="Neuromorphic"
+          iconSrc={infoImg1}
+          content="The emerging technology inspired by the biological brain that accelerates and enhances AI applications"
+        />
+        <InfoCard
+          title="AIoT"
+          iconSrc={infoImg2}
+          content="Where sensors and microcontrollers meet AI to improve cities, industries and even your house"
+        />
+        <InfoCard
+          title="Bioinformatics"
+          iconSrc={infoImg3}
+          content="Combining biology, computer science, and mathematics to analyze biological data,  genomics and proteomics."
+        />
       </div>
     </div>
   );

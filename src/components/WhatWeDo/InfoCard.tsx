@@ -1,5 +1,5 @@
 import React from "react";
-import "./InfoCard.css";
+import "./WhatWeDoSection.css";
 
 interface InfoCardProps {
   title: string;
@@ -13,22 +13,12 @@ export const InfoCard: React.FC<InfoCardProps> = ({
   content,
 }) => {
   return (
-    <div className="InfoCardcolumn">
-      <div className="InfoCardcard">
-        <div className="InfoCardheader">
-          <div className="InfoCardtitleWrapper">
-            <div className="InfoCardour">Our</div>
-            <div className="InfoCardtitle">{title}</div>
-          </div>
-          <img
-            loading="lazy"
-            src={iconSrc}
-            className="InfoCardicon"
-            alt={`${title} InfoCardicon`}
-          />
-        </div>
-        <div className="InfoCardcontent">{content}</div>
+    <div className="WWDCard">
+      <div className="WWDCardHeader">
+        <h2>{title}</h2>
+        <img loading="lazy" src={iconSrc} alt={`${title} InfoCardicon`} />
       </div>
+      <p>{content}</p>
     </div>
   );
 };

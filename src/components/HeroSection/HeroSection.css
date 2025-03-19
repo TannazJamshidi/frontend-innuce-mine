@@ -1,56 +1,54 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 .videoHome {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures video scales properly */
   z-index: -1; /* Puts video behind content */
+  opacity: 85%;
 }
 
 .herocontainer {
   display: flex;
-  width: 100%;
-  max-width: 1034px;
   flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  padding: 0 20px; /* Ensure spacing on smaller screens */
+  align-items: flex-start;
+  margin-left: 85px;
+  max-width: 735px;
+  gap: 20px;
 }
 
-.herotitle {
-  font-size: 48px;
+.herocontainer h1 {
+  font-size: 70px;
   font-weight: 600;
-  align-self: stretch;
   text-align: center;
-  line-height: 1.2;
   color: rgba(0, 43, 73, 1);
 }
 
-.herodescription {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 59px;
-  max-width: 731px;
-  text-align: center;
+.herocontainer h2 {
+  font-size: 35px;
+  font-weight: 600;
   line-height: 1.5;
+  text-align: left;
   color: rgba(0, 43, 73, 1);
 }
 
-/* Responsive Button */
-.heroexploreButton {
+.herocontainer p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 25px;
+  text-align: left;
+  color: rgba(0, 43, 73, 1);
+}
+
+.buttons button {
   border-radius: 15px;
   background-color: rgba(0, 43, 73, 1);
-  margin-top: 59px;
   font-size: 16px;
   color: rgba(255, 255, 255, 1);
   font-weight: 300;
@@ -58,84 +56,34 @@
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 20px;
 }
 
-.heroexploreButton:hover {
+.buttons button:hover {
   background-color: #f48124;
   transform: scale(1.05);
 }
 
-.heroexploreButton:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
-/* Tablet View (768px - 991px) */
 @media (max-width: 991px) {
-  .hero {
-    padding: 100px 40px;
+  .herocontainer {
+    margin: 50px 20px;
+    gap: 20px;
   }
 
-  .herotitle {
+  .herocontainer h1 {
     font-size: 40px;
   }
-
-  .herodescription {
-    font-size: 18px;
-    max-width: 90%;
-    margin-top: 40px;
+  .herocontainer h2 {
+    font-size: 30px;
   }
 
-  .heroexploreButton {
-    margin-top: 40px;
-  }
-}
-
-/* Mobile View (up to 767px) */
-@media (max-width: 767px) {
-  .hero {
-    padding: 80px 20px;
+  .herocontainer p {
+    font-size: 20px;
   }
 
-  .herocontainer {
-    margin-top: 20px;
-    padding: 0 15px;
-  }
-
-  .herotitle {
-    font-size: 32px;
-  }
-
-  .herodescription {
-    font-size: 16px;
-    max-width: 100%;
-    margin-top: 30px;
-  }
-
-  .heroexploreButton {
-    font-size: 14px;
-    padding: 10px 20px;
-    margin-top: 30px;
-  }
-}
-
-/* Extra Small Screens (up to 480px) */
-@media (max-width: 480px) {
-  .hero {
-    padding: 100px 15px;
-  }
-
-  .herotitle {
-    font-size: 28px;
-  }
-
-  .herodescription {
-    font-size: 14px;
-    margin-top: 25px;
-  }
-
-  .heroexploreButton {
-    font-size: 14px;
-    padding: 8px 18px;
+  .buttons button {
+    padding: 5px 12px;
+    font-size: 15px;
+    margin-right: 10px;
   }
 }
