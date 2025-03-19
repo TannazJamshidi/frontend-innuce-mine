@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Member from "./Member";
 import "./MeetTeam.css";
 import memberProf from "../../../assets/memberProf.svg";
+import GU from "../../../assets/GianvitoUrgesePic.svg";
 
 const MeetTeam: React.FC = () => {
   const members = [
     {
-      imgSrc: memberProf,
-      name: "Jane Doe",
-      role: "HEAD OF DESIGN",
+      imgSrc: GU,
+      name: "Gianvito Urgese",
+      role: "Associate Professor, PI",
       description:
         "Jane is passionate about creating user-centered designs. She has over 10 years of experience in graphic and product design, helping companies establish a strong visual identity.",
       linkedInUrl: "https://www.linkedin.com/in/jane-doe",
@@ -37,13 +38,29 @@ const MeetTeam: React.FC = () => {
         "Alice specializes in digital marketing strategies and customer engagement. She has a track record of driving brand growth through creative campaigns.",
       linkedInUrl: "https://www.linkedin.com/in/alice-brown",
     },
+    {
+      imgSrc: memberProf,
+      name: "Alice Brown",
+      role: "MARKETING LEAD",
+      description:
+        "Alice specializes in digital marketing strategies and customer engagement. She has a track record of driving brand growth through creative campaigns.",
+      linkedInUrl: "https://www.linkedin.com/in/alice-brown",
+    },
+    {
+      imgSrc: memberProf,
+      name: "Alice Brown",
+      role: "MARKETING LEAD",
+      description:
+        "Alice specializes in digital marketing strategies and customer engagement. She has a track record of driving brand growth through creative campaigns.",
+      linkedInUrl: "https://www.linkedin.com/in/alice-brown",
+    },
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div className="teamSection">
-      <div className="Teamtitle">MEET OUR TEAMS</div>
+      <h1>MEET OUR TEAMS</h1>
       <div className="members">
         {members.map((member, index) => (
           <Member

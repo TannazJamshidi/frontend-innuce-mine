@@ -30,21 +30,39 @@ export const Navigation: React.FC = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // aboutus and publiciations page has the scrolled style navbar for better visual clearity
+
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScrolled(true); // Set background to blue when scrolled
-    } else {
-      setScrolled(false); // Reset to transparent when at the top
+    if (
+      location.pathname !== "/aboutus" &&
+      location.pathname !== "/publications" &&
+      window.scrollY > 50
+    ) {
+      setScrolled(true);
+    } else if (
+      location.pathname !== "/aboutus" &&
+      location.pathname !== "/publications"
+    ) {
+      setScrolled(false);
     }
   };
 
   useEffect(() => {
+    if (
+      location.pathname === "/aboutus" ||
+      location.pathname === "/publications"
+    ) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+
     window.addEventListener("scroll", handleScroll);
-    // Cleanup the event listener when the component unmounts
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>

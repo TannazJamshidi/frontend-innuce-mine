@@ -4,12 +4,16 @@ import "./AboutUsSection2.css";
 
 export const NeuromorphicItem: React.FC<NeuromorphicItemProps> = ({
   icon,
+  title,
   description,
 }) => {
   return (
     <div className="itemContainer">
-      <img loading="lazy" src={icon} alt="" className="itemicon" />
-      <div className="itemdescription">{description}</div>
+      <img loading="lazy" src={icon} alt="" style={{ width: "35px" }} />
+      <div className="itemdescription">
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
     </div>
   );
 };
