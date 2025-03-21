@@ -1,5 +1,6 @@
 import React from "react";
 import "./MeetTeam.css";
+import linkedin_logo from "../../../assets/linkedin-logo-color.png"
 
 interface MemberProps {
   imgSrc: string;
@@ -41,8 +42,12 @@ const Member: React.FC<MemberProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             className="linkedinButton"
-          >
-            LinkedIn
+          ><img
+              loading="lazy"
+              src={linkedin_logo}
+              className="linkedinLogo"
+              alt="linkedin_logo"
+            />
           </a>
         </div>
       )}

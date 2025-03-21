@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Footer.css";
 import HF from "../../assets/huggingface.svg";
 import GitHub from "../../assets/github.svg";
-import ld from "../../assets/linkdin.svg";
+// import ld from "../../assets/linkdin.svg";
 import s1 from "../../assets/supporter1.png";
 import s2 from "../../assets/supporter2.png";
 import s3 from "../../assets/supporter3.png";
@@ -19,10 +19,9 @@ const FooterContent: React.FC = () => {
         <div className="footerLineV" />
         <div className="footerCol">
           <a href="/">HOME</a>
-          <a href="/Infrastructures">SERVICES</a>
-          <a href="/AboutUs">ABOUT US</a>
-          <a href="/Publications">PUBLICATIONS</a>
-          <a href="/ContactUs">CONTACT US</a>
+          <a href="/infrastructures">SERVICES</a>
+          <a href="/research">RESEARCH</a>
+          <a href="/aboutus">ABOUT US</a>
           <a href="/credits">CREDITS</a>
         </div>
 
