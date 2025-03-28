@@ -1,0 +1,14 @@
+.heroCS {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroCS h1 {
+  font-size: 72px;
+  font-weight: 500;
+  margin: auto;
+  color: white;
+}

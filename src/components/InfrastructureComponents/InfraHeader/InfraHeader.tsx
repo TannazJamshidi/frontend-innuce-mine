@@ -1,6 +1,5 @@
 import React from "react";
 import "./InfraHeader.css";
-// import brain from "../../../assets/brain.gif";
 import infographic from "../../../assets/infographic.svg";
 
 const InfraHeader: React.FC = () => {
@@ -20,25 +19,27 @@ const InfraHeader: React.FC = () => {
           libraries, to the development, done on the most popular and
           cutting-edge hardware.
           <br />
-          just bring your own idea : the computer power, the tools and the
-          hardware is on us.
+          <b>
+            Just bring your own idea : the computer power, the tools and the
+            hardware is on us.
+          </b>
           <br />
         </p>
         <button
           className="LaunchButton"
-          onClick={() => { }}
+          onClick={() => {}}
           tabIndex={0}
-          aria-label="Launch The prototyping Platform"
+          aria-label="Launch App"
         >
-          Launch The prototyping Platform
+          Launch App
         </button>
         <button
           className="DiscoverButton"
-          onClick={() => { }}
+          onClick={() => {}}
           tabIndex={0}
-          aria-label="Discover Our Tools and Softwares"
+          aria-label="Discover Our Services"
         >
-          Discover Our Tools and Softwares
+          Discover Our Services
         </button>
       </div>
       <div className="animationInfra">

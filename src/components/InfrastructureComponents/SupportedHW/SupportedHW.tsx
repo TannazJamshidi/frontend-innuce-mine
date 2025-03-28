@@ -1,37 +1,35 @@
 import React from "react";
 import "./SupportedHW.css";
-import { HardwareCard } from "./card";
-import { SupportedHardwareData } from "./types";
+import { ToolCard } from "../InfrastructureTools/InfaToolCard";
+import { ToolCardProps } from "../InfrastructureTools/types";
 
-const hardwareData: SupportedHardwareData[] = [
+const hardwareData: ToolCardProps[] = [
   {
-    title: "SpiNNaker 2.",
-    description:
-      "SpiNNaker 2 is the latest product from the University of ___ and the company SpiNNcloud.It allows to run the vast majority of Neuromorphic applications.",
+    title: "HW",
+    description: "short description",
+    link: "",
+    longDescription: "",
+    keywords: "keyword1,keyword2,keyword3",
+    flippable: false,
   },
   {
-    title: "QuickNll",
-    description:
-      "Spatial registration of serial microscopic brain images to three-dimentional refrence atlases with the QuickNll tool. PLosONE ,2019, 14(5): e0216796.https://doi.org/10.1371/journal.pone.0216796",
+    title: "HW",
+    description: "short description",
+    link: "",
+    longDescription: "",
+    keywords: "keyword1,keyword2,keyword3",
+    flippable: false,
   },
 ];
 
 export const SupportedHardware: React.FC = () => {
-  const handleLearnMore = (title: string) => {
-    console.log(`Learn more about ${title}`);
-  };
-
   return (
     <div className="HWcontainer">
-      <h1 className="HWheading">Supported Hardware</h1>
+      <h1 className="HWheading">SUPPORTED HARDWARE</h1>
       <div className="HWcardGrid">
-        {hardwareData.map((hardware, index) => (
+        {hardwareData.map((tool, index) => (
           <div key={index}>
-            <HardwareCard
-              title={hardware.title}
-              description={hardware.description}
-              onLearnMore={() => handleLearnMore(hardware.title)}
-            />
+            <ToolCard {...tool} />
           </div>
         ))}
       </div>

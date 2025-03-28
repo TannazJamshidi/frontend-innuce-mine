@@ -1,9 +1,8 @@
 .Pubheader {
   display: flex;
   flex-direction: column;
-  background-image: url("../../../assets/PubHeaderImg.png");
-  background-size: cover;
-  height: 750px;
+  background-color: rgba(0, 43, 73, 1);
+  height: 500px;
   align-items: center;
 }
 
@@ -11,7 +10,7 @@
   font-size: 48px;
   font-weight: 600;
   color: white;
-  margin-top: 200px;
+  margin: auto;
 }
 
 @media (max-width: 991px) {

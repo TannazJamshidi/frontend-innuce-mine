@@ -37,14 +37,13 @@ const sections: SectionProps[] = [
 export const SummaryAi: React.FC = () => {
   return (
     <div className="summarycontainer">
-      <div className="summaryupperGrid">
-        <SummaryAiSection {...sections[0]} className="summarygridItem" />
-        <SummaryAiSection {...sections[1]} className="summarygridItem" />
-      </div>
-      <div className="summarylowerGrid">
-        <SummaryAiSection {...sections[2]} className="summarygridItem" />
-        <SummaryAiSection {...sections[3]} className="gridItem" />
-      </div>
+      {sections.map((section, index) => (
+        <SummaryAiSection
+          key={index}
+          {...section}
+          className="summarygridItem"
+        />
+      ))}
     </div>
   );
 };

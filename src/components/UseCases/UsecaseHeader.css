@@ -1,0 +1,44 @@
+.UsecasesHeader {
+  display: flex; /* Make InfraHeader a flex container */
+  padding-left: 140px;
+  margin-bottom: 50px;
+}
+.particleUc {
+  position: absolute;
+  z-index: -1; /* Ensures it's behind the text */
+}
+.UcHeaderContainer {
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  width: 660px;
+}
+.UcHeaderContainer h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: left;
+  color: #002b49;
+}
+.UcHeaderContainer p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  color: #002b49;
+  margin-top: 50px;
+}
+
+.UcHeaderContainer button {
+  border-radius: 15px;
+  background-color: rgba(0, 43, 73, 1);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 50px;
+}
+.UcHeaderContainer button:hover {
+  background-color: #f48124;
+}

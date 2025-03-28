@@ -1,23 +1,28 @@
 import React from "react";
-import "./InfraTools.css";
+import "./InfraToolCard.css";
 import { ToolCardProps } from "./types";
 
 export const ToolCard: React.FC<ToolCardProps> = ({
   title,
   description,
-  link,
+  longDescription,
+  keywords,
+  flippable,
 }) => {
   return (
-    <div className="toolCard">
-      <h2 className="toolTitle">{title}</h2>
-      <p className="toolDescription">{description}</p>
-      <div className="buttonGp">
-        <a href={link} className="Icons">
-          GitHub
-        </a>
-        <a href={link} className="Icons">
-          Hugging Face
-        </a>
+    <div className={`toolCard ${flippable ? "flippable" : ""}`}>
+      <div className="card-inner">
+        {/* Front Side */}
+        <div className="card-front">
+          <h2 className="toolTitle">{title}</h2>
+          <p className="toolShortDes">{description}</p>
+          <p className="toolKeywords">{keywords}</p>
+        </div>
+
+        {/* Back Side */}
+        <div className="card-back">
+          <p className="toolLongDes">{longDescription}</p>
+        </div>
       </div>
     </div>
   );

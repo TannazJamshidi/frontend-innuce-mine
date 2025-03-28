@@ -1,85 +1,25 @@
 .HWcontainer {
+  background-image: url("../../../assets/GroupLinesFacilities.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
   display: flex;
   flex-direction: column;
-  padding: 50px 140px;
+  padding: 80px 140px;
 }
 
 .HWheading {
   color: #002b49;
   font-size: 48px;
   font-weight: 400;
-  margin-bottom: 50px;
+  align-self: center;
 }
 
 .HWcardGrid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 150px;
   margin-bottom: 30px;
-}
-
-.cardContainer {
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  width: 350px;
-  height: 380px;
-  padding: 30px;
-}
-
-.cardTitle {
-  color: rgba(0, 43, 73, 1);
-  font-size: 32px;
-  font-weight: 400;
-}
-
-.cardDescription {
-  color: rgba(0, 43, 73, 1);
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.learnMoreButton {
-  border-radius: 15px;
-  background-color: rgba(0, 43, 73, 1);
-  font-size: 16px;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 300;
-  padding: 8px 16px;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  align-self: flex-start;
-  text-align: center;
-}
-
-.learnMoreButton:hover {
-  background-color: #f48124;
-}
-
-.learnMoreButton:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
-@media (max-width: 991px) {
-  .HWcontainer {
-    padding: 50px 20px;
-  }
-  .cardGrid {
-    flex-direction: column;
-  }
-  .HWheading {
-    font-size: 24px;
-  }
-  .cardTitle {
-    font-size: 24px;
-  }
-  .cardDescription {
-    font-size: 12px;
-  }
-  .cardContainer {
-    height: auto;
-    padding: 15px;
-  }
+  align-self: center;
 }

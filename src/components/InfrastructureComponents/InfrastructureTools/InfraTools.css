@@ -1,107 +1,29 @@
-.toolsSection {
-  justify-content: center;
-  background-color: #002b49;
-  background-image: url("../../../assets/GroupLinesTools.svg");
+.toolsContainer {
+  background-image: url("../../../assets/GroupLinesFacilities.svg"),
+    linear-gradient(rgba(0, 43, 73, 0.3), rgba(135, 171, 193, 0.3));
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center;
+  background-size: contain, contain;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center calc(50% - 25px);
-}
-
-.toolsContainer {
+  background-position: center top;
   display: flex;
   flex-direction: column;
-  padding: 50px 140px;
+  padding: 80px 140px;
 }
 
 .toolsTitle {
-  color: white;
+  color: #002b49;
   font-size: 48px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin: auto;
 }
 
 .toolsGrid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 150px;
   margin-bottom: 30px;
-}
-
-.toolCard {
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 30px;
-  height: 380px;
-}
-
-.toolTitle {
-  color: rgb(0, 43, 73);
-  font-size: 32px;
-  font-weight: 400;
-  margin: 0 0 25px 15px;
-}
-
-.toolDescription {
-  color: rgb(0, 43, 73);
-  font-size: 20px;
-  font-weight: 300;
-  margin: 0;
-  flex-grow: 1;
-}
-
-.buttonGp {
-  display: flex;
-  gap: 10px;
-}
-
-.Icons {
-  border-radius: 15px;
-  background-color: rgba(0, 43, 73, 1);
-  padding: 5px 12px;
-  cursor: pointer;
-  text-decoration: none;
-  align-items: center;
-  color: white;
-  font-size: 16px;
-  font-weight: 300;
-  transition: background-color 0.3s ease;
-}
-
-.Icons:hover {
-  background-color: #f48124;
-}
-
-@media (max-width: 991px) {
-  .toolsContainer {
-    padding: 50px 20px;
-  }
-
-  .toolsGrid {
-    flex-direction: column;
-  }
-
-  .toolsTitle {
-    font-size: 24px;
-  }
-
-  .toolCard {
-    height: auto;
-    padding: 15px;
-  }
-  .toolTitle {
-    font-size: 24px;
-  }
-  .toolDescription {
-    font-size: 12px;
-  }
-  .Icons {
-    margin-top: 20px;
-    font-size: 12px;
-    padding: 3px 8px;
-  }
+  align-self: center;
 }

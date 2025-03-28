@@ -1,11 +1,11 @@
 import UseCases from "../components/UseCases/UseCases";
-import FooterContent from "../components/Footer/FooterContent";
+import UsecasesHeader from "../components/UseCases/UsecasesHeader";
 
 function UseCasesPage() {
   return (
     <>
+      <UsecasesHeader></UsecasesHeader>
       <UseCases></UseCases>
-      <FooterContent></FooterContent>
     </>
   );
 }

@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { NavItem } from "./NavItem";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logoW from "../../assets/inNuceWhite.svg";
 import logoB from "../../assets/inNuceBW.svg";
 
@@ -13,16 +14,17 @@ const navigationItems = [
     hasDropdown: true,
     parentTo: "/services",
     dropdownLinks: [
-      { label: "INFRASTRUCTURES", to: " " },
-      { label: "USE CASES", to: " " },
+      { label: "INFRASTRUCTURES", to: "/infrastructures" },
+      { label: "USE CASES", to: "/usecases" },
     ],
   },
-  { label: "RESEARCH", to: "" },
+  { label: "RESEARCH", to: "/research" },
   { label: "ABOUT US", to: "/aboutus" },
 ];
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -35,13 +37,15 @@ export const Navigation: React.FC = () => {
   const handleScroll = () => {
     if (
       location.pathname !== "/aboutus" &&
-      location.pathname !== "/publications" &&
+      location.pathname !== "/accessapp" &&
+      location.pathname !== "/research" &&
       window.scrollY > 50
     ) {
       setScrolled(true);
     } else if (
       location.pathname !== "/aboutus" &&
-      location.pathname !== "/publications"
+      location.pathname !== "/accessapp" &&
+      location.pathname !== "/research"
     ) {
       setScrolled(false);
     }
@@ -50,7 +54,8 @@ export const Navigation: React.FC = () => {
   useEffect(() => {
     if (
       location.pathname === "/aboutus" ||
-      location.pathname === "/publications"
+      location.pathname === "/accessapp" ||
+      location.pathname === "/research"
     ) {
       setScrolled(true);
     } else {
@@ -63,6 +68,9 @@ export const Navigation: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [location.pathname]);
+  const handleAccessButtonClick = () => {
+    navigate("/accessapp"); // Navigate to the "comingsoon" page
+  };
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
@@ -91,7 +99,9 @@ export const Navigation: React.FC = () => {
         <div className={menuOpen ? "bar open" : "bar"}></div>
       </div>
 
-      <button className="accessButton">ACCESS APP</button>
+      <button className="accessButton" onClick={handleAccessButtonClick}>
+        ACCESS APP
+      </button>
     </nav>
   );
 };
