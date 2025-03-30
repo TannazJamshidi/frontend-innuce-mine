@@ -4,8 +4,8 @@
   flex-direction: column;
 }
 
-.itemdescription h1 {
-  font-size: 30px;
+.itemdescription h2 {
+  font-size: 32px;
   font-weight: 400;
   color: #f48124;
 }
@@ -33,7 +33,7 @@
   text-align: left;
 }
 
-.AboutusS2mainImage {
+.AboutusS2content img {
   object-fit: contain;
   width: 50%;
 }
@@ -55,13 +55,5 @@
     width: 90%;
     text-align: center;
     height: auto;
-  }
-
-  .itemdescription {
-    font-size: 12px;
-  }
-  .itemicon {
-    width: 7%;
-    margin: 10px;
   }
 }

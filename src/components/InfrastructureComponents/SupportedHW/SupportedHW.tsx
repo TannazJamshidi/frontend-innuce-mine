@@ -25,7 +25,7 @@ const hardwareData: ToolCardProps[] = [
 export const SupportedHardware: React.FC = () => {
   return (
     <div className="HWcontainer">
-      <h1 className="HWheading">SUPPORTED HARDWARE</h1>
+      <h1>SUPPORTED HARDWARE</h1>
       <div className="HWcardGrid">
         {hardwareData.map((tool, index) => (
           <div key={index}>

@@ -10,7 +10,9 @@ import Infrastructures from "./pages/Infrastructures";
 import AboutUs from "./pages/AboutUs";
 import Publications from "./pages/Publications";
 import UseCasesPage from "./pages/UseCasesPage";
+import UseCaseDetailsPage from "./pages/UseCaseDetailsPage";
 import FooterContent from "./components/Footer/FooterContent";
+import Credits from "./components/Credits/Credits";
 import { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import ComingSoonPage from "./pages/ComingSoonPage";
@@ -48,9 +50,11 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/infrastructures" element={<Infrastructures />} />
         <Route path="/usecases" element={<UseCasesPage />} />
+        <Route path="/usecasesdetails" element={<UseCaseDetailsPage />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/research" element={<Publications />} />
         <Route path="/accessapp" element={<ComingSoonPage />} />
+        <Route path="/credits" element={<Credits />} />
       </Routes>
       <FooterContent></FooterContent>
     </div>

@@ -6,12 +6,12 @@ const InfraHeader: React.FC = () => {
   return (
     <section className="InfraHeader">
       <div className="Infracontainer">
-        <h1 className="Infratitle">
+        <h1>
           Your Neuromorphic
           <br />
           Prototyping Platform
         </h1>
-        <p className="Infradescription">
+        <h3 className="Infradescription">
           InNuce labs offer a complete , easy to use Prototyping Platform for
           all Neuromorphic needs.
           <br />
@@ -24,23 +24,16 @@ const InfraHeader: React.FC = () => {
             hardware is on us.
           </b>
           <br />
-        </p>
-        <button
-          className="LaunchButton"
-          onClick={() => {}}
-          tabIndex={0}
-          aria-label="Launch App"
-        >
-          Launch App
-        </button>
-        <button
-          className="DiscoverButton"
-          onClick={() => {}}
-          tabIndex={0}
-          aria-label="Discover Our Services"
-        >
-          Discover Our Services
-        </button>
+        </h3>
+
+        <div className="buttons">
+          <button onClick={() => {}} tabIndex={0}>
+            Launch App
+          </button>
+          <button onClick={() => {}} tabIndex={0}>
+            Discover Our Services
+          </button>
+        </div>
       </div>
       <div className="animationInfra">
         <img src={infographic} alt="" />

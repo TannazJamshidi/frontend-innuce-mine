@@ -82,3 +82,20 @@
   color: #002b49;
   transform: rotateY(180deg);
 }
+
+.card-back button {
+  border-radius: 15px;
+  background-color: rgba(0, 43, 73, 1);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  padding: 12px 24px; /* Increased padding for better tap experience */
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center;
+}
+.card-back button:hover {
+  background-color: #f48124;
+  transform: scale(1.05);
+}

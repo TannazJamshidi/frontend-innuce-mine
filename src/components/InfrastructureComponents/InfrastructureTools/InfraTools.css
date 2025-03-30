@@ -12,10 +12,10 @@
   padding: 80px 140px;
 }
 
-.toolsTitle {
+.toolsContainer h1 {
   color: #002b49;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   margin: auto;
 }
 
@@ -26,4 +26,10 @@
   margin-top: 150px;
   margin-bottom: 30px;
   align-self: center;
+}
+
+@media (max-width: 991px) {
+  .toolsContainer h1 {
+    font-size: 40px;
+  }
 }

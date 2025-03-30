@@ -1,6 +1,7 @@
 import React from "react";
 import "./InfraToolCard.css";
 import { ToolCardProps } from "./types";
+import { useNavigate } from "react-router-dom";
 
 export const ToolCard: React.FC<ToolCardProps> = ({
   title,
@@ -9,6 +10,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({
   keywords,
   flippable,
 }) => {
+  const navigate = useNavigate();
   return (
     <div className={`toolCard ${flippable ? "flippable" : ""}`}>
       <div className="card-inner">
@@ -22,6 +24,9 @@ export const ToolCard: React.FC<ToolCardProps> = ({
         {/* Back Side */}
         <div className="card-back">
           <p className="toolLongDes">{longDescription}</p>
+          <button onClick={() => navigate("/usecasesdetails")}>
+            Discover more
+          </button>
         </div>
       </div>
     </div>

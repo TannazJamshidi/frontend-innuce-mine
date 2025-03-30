@@ -10,63 +10,39 @@
   width: 660px;
 }
 
-.Infratitle {
+.Infracontainer h1 {
   font-size: 48px;
   font-weight: 600;
   text-align: left;
   color: #002b49;
 }
 
-.Infradescription {
+.Infracontainer h3 {
   font-size: 20px;
   font-weight: 400;
+  line-height: 1.5;
   text-align: left;
   color: #002b49;
   margin-top: 50px;
 }
 
-.LaunchButton {
+.buttons button {
   border-radius: 15px;
   background-color: rgba(0, 43, 73, 1);
   font-size: 16px;
   color: rgba(255, 255, 255, 1);
   font-weight: 300;
-  padding: 5px 12px;
+  padding: 12px 24px; /* Increased padding for better tap experience */
   cursor: pointer;
   border: none;
-  transition: background-color 0.3s ease;
-  margin-top: 25px;
-  margin-right: 24px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 20px;
+  margin-top: 50px;
 }
 
-.LaunchButton:hover {
+.buttons button:hover {
   background-color: #f48124;
-}
-
-.LaunchButton:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
-.DiscoverButton {
-  border-radius: 15px;
-  border-color: #002b49;
-  background-color: transparent;
-  font-size: 16px;
-  color: rgba(0, 43, 73, 1);
-  font-weight: 300;
-  padding: 5px 12px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.DiscoverButton:hover {
-  background-color: #f48124;
-}
-
-.DiscoverButton:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
+  transform: scale(1.05);
 }
 
 .animationInfra {
@@ -89,19 +65,8 @@
     margin-top: 60px;
   }
 
-  .Infratitle {
-    font-size: 24px;
-  }
-
-  .Infradescription {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-
-  .LaunchButton,
-  .DiscoverButton {
-    font-size: 12px;
-    padding: 3px 8px;
+  .Infracontainer h1 {
+    font-size: 40px;
   }
 
   .animationInfra {

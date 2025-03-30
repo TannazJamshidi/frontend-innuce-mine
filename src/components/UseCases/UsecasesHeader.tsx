@@ -12,7 +12,7 @@ const UsecasesHeader = () => {
       <Particles className="particleUc" options={options} />
       <div className="UcHeaderContainer">
         <h1>Discover our Use Cases</h1>
-        <p>
+        <h3>
           InNuce labs offer a complete , easy to use Prototyping Platform for
           all Neuromorphic needs.
           <br />
@@ -25,7 +25,7 @@ const UsecasesHeader = () => {
             hardware is on us.
           </b>
           <br />
-        </p>
+        </h3>
         <button onClick={() => {}} tabIndex={0} aria-label="Discover Use Cases">
           Discover Use Cases
         </button>

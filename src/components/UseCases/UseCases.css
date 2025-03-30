@@ -18,7 +18,7 @@
 .UseCasecontainer h1 {
   color: #002b49;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   margin: auto;
 }
 
@@ -34,5 +34,8 @@
   .UseCasegrid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .UseCasecontainer h1 {
+    font-size: 40px;
   }
 }

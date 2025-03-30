@@ -4,7 +4,7 @@ function Neuromorphic() {
   return (
     <section className="Neu-background-section">
       <div className="Neu-content-box">
-        <p>{TEXT}</p>
+        <h3>{TEXT}</h3>
       </div>
     </section>
   );

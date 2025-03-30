@@ -23,22 +23,23 @@
   margin: 100px 0 100px 0;
 }
 
-.AboutUstitle {
+.AboutUsContent h5 {
   font-size: 70px;
   font-weight: 600;
   color: #002b49;
 }
 
-.AboutUsDes {
-  font-weight: 300;
-  font-size: 25px;
+.AboutUsContent h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
   width: 50%;
   color: #002b49;
 }
 
 /* Responsive Styles for 991px */
 @media (max-width: 991px) {
-  .AboutUstitle {
+  .AboutUsContent h5 {
     font-size: 40px;
   }
   .AboutUsheader img {
@@ -49,8 +50,7 @@
     padding: 20px;
   }
 
-  .AboutUsDes {
-    font-size: 20px;
+  .AboutUsContent h3 {
     text-align: center;
     padding: 8px;
     width: 100%;

@@ -11,7 +11,7 @@ export const NeuromorphicItem: React.FC<NeuromorphicItemProps> = ({
     <div className="itemContainer">
       <img loading="lazy" src={icon} alt="" style={{ width: "35px" }} />
       <div className="itemdescription">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>

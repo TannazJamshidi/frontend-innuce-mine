@@ -8,10 +8,10 @@
   padding: 80px 140px;
 }
 
-.HWheading {
+.HWcontainer h1 {
   color: #002b49;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   align-self: center;
 }
 
@@ -22,4 +22,10 @@
   margin-top: 150px;
   margin-bottom: 30px;
   align-self: center;
+}
+
+@media (max-width: 991px) {
+  .HWcontainer h1 {
+    font-size: 40px;
+  }
 }

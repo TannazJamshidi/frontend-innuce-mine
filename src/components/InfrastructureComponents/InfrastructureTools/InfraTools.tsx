@@ -33,7 +33,7 @@ const toolsData: ToolCardProps[] = [
 export const Tools: React.FC = () => {
   return (
     <div className="toolsContainer">
-      <h1 className="toolsTitle">inNuCE TOOLS</h1>
+      <h1>inNuCE TOOLS</h1>
       <div className="toolsGrid">
         {toolsData.map((tool, index) => (
           <div key={index}>
