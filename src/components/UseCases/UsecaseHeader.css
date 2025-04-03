@@ -5,7 +5,10 @@
 }
 .particleUc {
   position: absolute;
+  width: 100%;
+  height: 100%;
   z-index: -1; /* Ensures it's behind the text */
+  margin-left: 200px;
 }
 .UcHeaderContainer {
   flex-direction: column;
@@ -60,5 +63,9 @@
 
   .UcHeaderContainer h1 {
     font-size: 40px;
+  }
+
+  .particleUc {
+    margin-left: 0;
   }
 }

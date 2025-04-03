@@ -7,7 +7,7 @@ export const BACKGROUND: ISourceOptions = {
     image: "",
     position: "50% 50%",
     repeat: "no-repeat",
-    size: "",
+    size: "cover",
     opacity: 1,
   },
   backgroundMask: {
@@ -283,7 +283,7 @@ export const BACKGROUND: ISourceOptions = {
     },
     number: {
       density: {
-        enable: false,
+        enable: true,
         width: 1920,
         height: 1080,
       },
@@ -483,7 +483,7 @@ export const BACKGROUND: ISourceOptions = {
     },
   },
   pauseOnBlur: true,
-  pauseOnOutsideViewport: true,
+  pauseOnOutsideViewport: false,
   responsive: [],
   smooth: false,
   style: {},
@@ -520,9 +520,9 @@ export const BACKGROUND: ISourceOptions = {
     scale: 0.4,
     type: "inline",
     url: SD,
-    position: {
-      x: 70,
-      y: 50,
-    },
+    //position: {
+    //  x: 70,
+    //  y: 50,
+    //},
   },
 };
