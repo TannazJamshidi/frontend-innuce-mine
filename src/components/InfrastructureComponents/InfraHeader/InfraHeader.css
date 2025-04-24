@@ -5,6 +5,7 @@
 }
 
 .Infracontainer {
+  display: flex;
   flex-direction: column;
   margin-top: 150px;
   width: 660px;

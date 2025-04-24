@@ -9,7 +9,6 @@ const UsecasesHeader = () => {
 
   return (
     <section className="UsecasesHeader">
-      <Particles className="particleUc" options={options} />
       <div className="UcHeaderContainer">
         <h1>Discover our Use Cases</h1>
         <h3>
@@ -30,6 +29,8 @@ const UsecasesHeader = () => {
           Discover Use Cases
         </button>
       </div>
+
+      <Particles className="particleUc" options={options} />
     </section>
   );
 };
