@@ -12,7 +12,7 @@ import Publications from "./pages/Publications";
 import UseCasesPage from "./pages/UseCasesPage";
 import UseCaseDetailsPage from "./pages/UseCaseDetailsPage";
 import FooterContent from "./components/Footer/FooterContent";
-import Credits from "./components/Credits/Credits";
+import CreditPage from "./pages/CreditPage";
 import { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import ComingSoonPage from "./pages/ComingSoonPage";
@@ -54,7 +54,7 @@ const App: React.FC = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/research" element={<Publications />} />
         <Route path="/accessapp" element={<ComingSoonPage />} />
-        <Route path="/credits" element={<Credits />} />
+        <Route path="/credits" element={<CreditPage />} />
       </Routes>
       <FooterContent></FooterContent>
     </div>

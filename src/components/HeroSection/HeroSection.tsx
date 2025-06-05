@@ -19,7 +19,10 @@ const HeroSection: React.FC = () => {
         options={options}
       />
       <div className="herocontainer">
-        <h5>inNuCE Lab</h5>
+        <h5>
+          i<span className="special-n">n</span>N
+          <span className="special-u">u</span>CE Lab
+        </h5>
         <h4>
           The Neuromorphic Computing Research Infrastructure @ Politecnico di
           Torino

@@ -1,6 +1,8 @@
 .teamSection {
-  background-image: url("../../../assets/GroupLinesFacilities.svg"),
-    linear-gradient(rgba(0, 43, 73, 0.3), rgba(135, 171, 193, 0.3));
+  background-image: linear-gradient(
+    rgba(0, 43, 73, 0.3),
+    rgba(135, 171, 193, 0.3)
+  );
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center;
   background-size: contain, contain;
@@ -15,8 +17,8 @@
   color: rgba(0, 43, 73, 1);
   text-align: center;
   font-size: 48px;
-  font-weight: 600;
-  margin-top: 80px;
+  font-weight: 500;
+  margin-top: 50px;
 }
 
 .members {
@@ -55,11 +57,11 @@
 }
 
 .memberImage {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  mask-image: url('../../../assets/members/member_brain_shape.svg');
-  -webkit-mask-image: url('../../../assets/members/member_brain_shape.svg');
+  mask-image: url("../../../assets/members/member_brain_shape.svg");
+  -webkit-mask-image: url("../../../assets/members/member_brain_shape.svg");
   mask-size: contain;
   /* Adatta il SVG all'immagine */
   -webkit-mask-size: contain;

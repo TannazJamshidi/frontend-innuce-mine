@@ -1,32 +1,24 @@
-.Neu-content-box h3 {
-  font-weight: 300;
-  line-height: 1.5;
-  font-size: 25px;
-  text-align: left;
-  color: rgba(0, 43, 73, 1);
-}
-
 .Neu-background-section {
-  position: relative;
-  width: 100%;
-  height: 620px;
-  background-image: url("../../assets/politoImg.jpg");
+  background-image: url("../../assets/politoImg.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 90vh;
+}
+.citation {
+  flex-direction: column;
+  height: 250px;
+  width: 425px;
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
 }
 
-.Neu-content-box {
-  padding: 20px 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(7.5px);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+.citation p {
+  font-weight: 600;
+  font-size: 16px;
   text-align: center;
-  width: 70%;
-  height: auto;
-  margin: auto;
+  margin-top: -180px;
+  color: rgba(0, 43, 73, 1);
 }
 
 @media (max-width: 991px) {

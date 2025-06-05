@@ -1,58 +1,33 @@
 .AboutUsheader {
-  background-image: url("../../../assets/aboutUsImg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.AboutUsheader img {
+  width: 50%;
 }
 
 .AboutUsContent {
-  display: grid;
+  display: flex;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  padding: 10px 85px;
   gap: 50px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-  backdrop-filter: blur(3px); /* Glassmorphism effect */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  height: 70%;
-  width: 90%;
-  padding: 80px;
-  text-align: left;
-  margin: 100px 0 100px 0;
 }
 
-.AboutUsContent h5 {
-  font-size: 70px;
-  font-weight: 600;
+.AboutUsContent h1 {
+  font-size: 48px;
+  font-weight: 700;
   color: #002b49;
+  flex-shrink: 0;
 }
 
-.AboutUsContent h3 {
-  font-weight: 400;
+.AboutUsContent p {
+  font-weight: 350;
   font-size: 20px;
-  line-height: 1.5;
-  width: 50%;
   color: #002b49;
-}
-
-/* Responsive Styles for 991px */
-@media (max-width: 991px) {
-  .AboutUsContent h5 {
-    font-size: 40px;
-  }
-  .AboutUsheader img {
-    width: 100%;
-  }
-  .AboutUsContent {
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .AboutUsContent h3 {
-    text-align: center;
-    padding: 8px;
-    width: 100%;
-  }
+  position: relative;
+  width: 100%;
 }

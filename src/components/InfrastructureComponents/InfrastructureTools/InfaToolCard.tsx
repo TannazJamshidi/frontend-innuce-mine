@@ -6,29 +6,13 @@ import { useNavigate } from "react-router-dom";
 export const ToolCard: React.FC<ToolCardProps> = ({
   title,
   description,
-  longDescription,
-  keywords,
-  flippable,
+  iconSRC,
 }) => {
-  const navigate = useNavigate();
   return (
-    <div className={`toolCard ${flippable ? "flippable" : ""}`}>
-      <div className="card-inner">
-        {/* Front Side */}
-        <div className="card-front">
-          <h2 className="toolTitle">{title}</h2>
-          <p className="toolShortDes">{description}</p>
-          <p className="toolKeywords">{keywords}</p>
-        </div>
-
-        {/* Back Side */}
-        <div className="card-back">
-          <p className="toolLongDes">{longDescription}</p>
-          <button onClick={() => navigate("/usecasesdetails")}>
-            Discover more
-          </button>
-        </div>
-      </div>
+    <div className="toolCard">
+      <img className="toolIcon" src={iconSRC} />
+      <h2 className="toolTitle">{title}</h2>
+      <p className="toolDes">{description}</p>
     </div>
   );
 };

@@ -27,24 +27,15 @@ const neuromorphicData = [
 
 export const NeuromorphicSection: React.FC = () => {
   return (
-    <div className="AboutusS2container">
-      <img
-        loading="lazy"
-        src={S2image}
-        alt="Neuromorphic computing visualization"
-        className="AboutusS2mainImage"
-      />
-
-      <div className="AboutusS2content">
-        {neuromorphicData.map((item, index) => (
-          <NeuromorphicItem
-            key={index}
-            icon={item.icon}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
-      </div>
+    <div className="AboutusS2content">
+      {neuromorphicData.map((item, index) => (
+        <NeuromorphicItem
+          key={index}
+          icon={item.icon}
+          title={item.title}
+          description={item.description}
+        />
+      ))}
     </div>
   );
 };

@@ -11,15 +11,14 @@
 .HWcontainer h1 {
   color: #002b49;
   font-size: 48px;
-  font-weight: 600;
-  align-self: center;
+  font-weight: 500;
+  margin: auto;
 }
 
 .HWcardGrid {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 30px;
   align-self: center;
 }

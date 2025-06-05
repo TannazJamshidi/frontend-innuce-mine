@@ -2,31 +2,32 @@ import React from "react";
 import "./InfraTools.css";
 import { ToolCard } from "./InfaToolCard";
 import { ToolCardProps } from "./types";
+import tool1 from "../../../assets/tool1.svg";
+import tool2 from "../../../assets/tool2.svg";
+import tool3 from "../../../assets/tool3.svg";
 
 const toolsData: ToolCardProps[] = [
   {
-    title: "Tool",
-    description: "short description",
+    title: "SPIKIFY",
+    description:
+      "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu  himenaeos s..",
     link: "",
-    longDescription: "",
-    keywords: "keyword1,keyword2,keyword3",
-    flippable: false,
+    iconSRC: tool1,
+  },
+
+  {
+    title: "MOUSE BRAIN ATLAS",
+    description:
+      "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu  himenaeos s..",
+    link: "",
+    iconSRC: tool2,
   },
   {
-    title: "Tool",
-    description: "short description",
+    title: "RAT BRAIN ATLAS",
+    description:
+      "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu  himenaeos s..",
     link: "",
-    longDescription: "",
-    keywords: "keyword1,keyword2,keyword3",
-    flippable: false,
-  },
-  {
-    title: "Tool",
-    description: "short description",
-    link: "",
-    longDescription: "",
-    keywords: "keyword1,keyword2,keyword3",
-    flippable: false,
+    iconSRC: tool3,
   },
 ];
 

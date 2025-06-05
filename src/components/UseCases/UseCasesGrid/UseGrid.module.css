@@ -1,0 +1,53 @@
+.useall {
+  background-image: linear-gradient(
+    rgba(0, 43, 73, 0.3),
+    rgba(206, 228, 242, 0.3)
+  );
+}
+.useall h1 {
+  color: rgba(0, 43, 73, 1);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  padding-top: 50px;
+}
+.GridAndFilter {
+  display: flex;
+  gap: 100px;
+
+  padding: 100px 100px;
+}
+
+.Gridcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+
+.topSection {
+  display: flex;
+  gap: 10px;
+}
+
+.bottomSection {
+  display: flex;
+  gap: 10px;
+}
+
+.tripleLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tripleRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.twoSquares {
+  display: flex;
+  gap: 10px;
+}

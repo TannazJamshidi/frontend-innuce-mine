@@ -1,8 +1,6 @@
 export interface ToolCardProps {
-    title: string;
-    description: string;
-    longDescription:string;
-    keywords:string;
-    link: string;
-    flippable : boolean,
-  }
+  title: string;
+  description: string;
+  iconSRC: string;
+  link: string;
+}

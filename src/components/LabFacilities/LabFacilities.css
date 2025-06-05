@@ -1,30 +1,26 @@
 /*facility section*/
 
 .Facilitycontainer {
-  background-image: url("../../assets/GroupLinesFacilities.svg");
-  background-color: rgba(255, 255, 255, 1);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center calc(0%);
   display: flex;
   flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .Facilitycontainer h1 {
   color: rgba(0, 43, 73, 1);
   text-align: center;
   font-size: 48px;
-  font-weight: 600;
-  margin-top: 80px;
+  font-weight: 500;
+  margin-top: 50px;
 }
 
 .FacilitycardGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  align-self: center;
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin: 130px 80px 100px 80px;
 }
 
 @media (max-width: 991px) {
@@ -44,42 +40,42 @@
 
 /*facility card*/
 .facilityCard {
+  position: relative;
   border-radius: 20px;
+  border: 1px solid black;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   display: flex;
-  flex-direction: column;
-  color: rgba(0, 43, 73, 1);
-  width: 500px;
-}
-
-.facilityCard img {
-  width: 150px;
-  height: 200px;
-  margin: auto;
-  padding: 10px 0 10px 0;
+  height: 300px;
+  width: 650px;
+  overflow: hidden; /* prevents content from spilling out */
 }
 
 .facilityCardDes {
   display: flex;
   flex-direction: column;
-  background-color: rgba(244, 149, 36, 0.7);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   padding: 20px;
   text-align: left;
   gap: 20px;
-  height: 350px;
+  color: rgba(0, 43, 73, 1);
+}
+
+.facilityCard img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: contain;
 }
 
 .facilityCardDes h2 {
   font-size: 32px;
   font-weight: 400;
+  width: 600px;
 }
 
 .facilityCard p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
+  width: 400px;
 }
 
 @media (max-width: 991px) {
