@@ -8,6 +8,7 @@ interface CardProps {
   variant: "horizontal" | "vertical" | "square-with-image" | "square-no-image";
   onDiscoverMore?: () => void;
   hashtags: string[];
+  slug: string;
 }
 
 function Card({
@@ -17,12 +18,6 @@ function Card({
   variant,
   onDiscoverMore,
 }: CardProps) {
-  const handleClick = () => {
-    if (onDiscoverMore) {
-      onDiscoverMore();
-    }
-  };
-
   if (variant === "horizontal") {
     return (
       <article
@@ -37,7 +32,7 @@ function Card({
         <div className={styles.horizontalContent}>
           <h2>{title}</h2>
           <p>{description}</p>
-          <button className={styles.UCbutton} onClick={handleClick}>
+          <button className={styles.UCbutton} onClick={onDiscoverMore}>
             Discover More
           </button>
         </div>
@@ -82,7 +77,7 @@ function Card({
       <article className={styles.squareTextCard}>
         <h2>{title}</h2>
         <p>{description}</p>
-        <button className={styles.UCbutton} onClick={handleClick}>
+        <button className={styles.UCbutton} onClick={onDiscoverMore}>
           Discover More
         </button>
       </article>

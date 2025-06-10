@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import styles from "./UseGrid.module.css";
 import Card from "./Card";
@@ -14,9 +15,10 @@ import CheckListFilter from "./CheckListFilter";
 
 function UseGrid() {
   const [filteredCards, setFilteredCards] = useState(allCards);
+  const navigate = useNavigate();
 
-  const handleDiscoverMore = (title: string) => {
-    console.log(`Discover more clicked for: ${title}`);
+  const handleDiscoverMore = (slug: string) => {
+    navigate(`/usecasesdetails/${slug}`);
   };
 
   return (
@@ -34,9 +36,8 @@ function UseGrid() {
                 hashtags={filteredCards[0].hashtags}
                 imagesrc={verticalLeft}
                 variant="vertical"
-                onDiscoverMore={() =>
-                  handleDiscoverMore(filteredCards[0].title)
-                }
+                slug={filteredCards[0].slug}
+                onDiscoverMore={() => handleDiscoverMore(filteredCards[0].slug)}
               />
             )}
 
@@ -49,6 +50,7 @@ function UseGrid() {
                     title=""
                     description=""
                     hashtags={[""]}
+                    slug=""
                   />
                 )}
                 {filteredCards[1] && (
@@ -58,8 +60,9 @@ function UseGrid() {
                     hashtags={filteredCards[1].hashtags}
                     imagesrc=""
                     variant="square-no-image"
+                    slug={filteredCards[1].slug}
                     onDiscoverMore={() =>
-                      handleDiscoverMore(filteredCards[1].title)
+                      handleDiscoverMore(filteredCards[1].slug)
                     }
                   />
                 )}
@@ -71,8 +74,9 @@ function UseGrid() {
                   hashtags={filteredCards[2].hashtags}
                   imagesrc={horizontalRight}
                   variant="horizontal"
+                  slug={filteredCards[2].slug}
                   onDiscoverMore={() =>
-                    handleDiscoverMore(filteredCards[2].title)
+                    handleDiscoverMore(filteredCards[2].slug)
                   }
                 />
               )}
@@ -88,8 +92,9 @@ function UseGrid() {
                   hashtags={filteredCards[3].hashtags}
                   imagesrc={horizontalLeft}
                   variant="horizontal"
+                  slug={filteredCards[3].slug}
                   onDiscoverMore={() =>
-                    handleDiscoverMore(filteredCards[3].title)
+                    handleDiscoverMore(filteredCards[3].slug)
                   }
                 />
               )}
@@ -101,6 +106,7 @@ function UseGrid() {
                     title=""
                     description=""
                     hashtags={[""]}
+                    slug=""
                   />
                 )}
                 {filteredCards[4] && (
@@ -110,8 +116,9 @@ function UseGrid() {
                     hashtags={filteredCards[4].hashtags}
                     imagesrc=""
                     variant="square-no-image"
+                    slug={filteredCards[4].slug}
                     onDiscoverMore={() =>
-                      handleDiscoverMore(filteredCards[4].title)
+                      handleDiscoverMore(filteredCards[4].slug)
                     }
                   />
                 )}
@@ -125,9 +132,8 @@ function UseGrid() {
                 hashtags={filteredCards[5].hashtags}
                 imagesrc={verticalRight}
                 variant="vertical"
-                onDiscoverMore={() =>
-                  handleDiscoverMore(filteredCards[5].title)
-                }
+                slug={filteredCards[5].slug}
+                onDiscoverMore={() => handleDiscoverMore(filteredCards[5].slug)}
               />
             )}
           </div>

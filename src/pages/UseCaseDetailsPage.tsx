@@ -1,12 +1,15 @@
-import React from 'react'
-import UseCasesDetails from "../components/UseCases/UseCasesDetails"
+import React from "react";
+import { useParams } from "react-router-dom";
+import UseCasesDetails from "../components/UseCases/UseCasesDetails";
 
 const UseCaseDetailsPage = () => {
-  return (
-    <>
-        <UseCasesDetails></UseCasesDetails>
-    </>
-  )
-}
+  const { slug } = useParams<{ slug: string }>();
 
-export default UseCaseDetailsPage
+  if (!slug) {
+    return <div>Slug not found</div>;
+  }
+
+  return <UseCasesDetails slug={slug} />;
+};
+
+export default UseCaseDetailsPage;
