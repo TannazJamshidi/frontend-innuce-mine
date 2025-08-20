@@ -1,7 +1,6 @@
 import React from "react";
 import "./InfraToolCard.css";
 import { ToolCardProps } from "./types";
-import { useNavigate } from "react-router-dom";
 
 export const ToolCard: React.FC<ToolCardProps> = ({
   title,

@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 import Particles from "@tsparticles/react";
-import { type Container, type ISourceOptions } from "@tsparticles/engine";
+import {  type ISourceOptions } from "@tsparticles/engine";
 import { BACKGROUND } from "./constant";
 import "./ComingSoon.css";
 

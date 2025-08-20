@@ -1,6 +1,6 @@
 // ChecklistFilter.tsx
 "use client";
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { cards as allCards } from "./GridCards";
 import styles from "./ChecklistFilter.module.css";
 

@@ -1,5 +1,4 @@
 import "./Neuromorphic.css";
-import { TEXT } from "./constants";
 import quoteBorder from "../../assets/quoteBorder.svg";
 function Neuromorphic() {
   return (

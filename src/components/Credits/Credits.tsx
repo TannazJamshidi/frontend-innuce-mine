@@ -1,5 +1,4 @@
 "use client";
-import * as React from "react";
 import styles from "./Credits.module.css";
 
 function Credits() {
