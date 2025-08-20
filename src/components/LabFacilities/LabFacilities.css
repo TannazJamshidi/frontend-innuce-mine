@@ -18,7 +18,7 @@
 
 .FacilitycardGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
   margin: 130px 80px 100px 80px;
 }
@@ -46,8 +46,8 @@
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   height: 300px;
-  width: 650px;
-  overflow: hidden; /* prevents content from spilling out */
+  overflow: hidden; 
+  width: 650px;  
 }
 
 .facilityCardDes {
@@ -64,26 +64,35 @@
   bottom: 0;
   right: 0;
   object-fit: contain;
+  max-width: 200px;
+  height: auto;
 }
 
 .facilityCardDes h2 {
   font-size: 32px;
   font-weight: 400;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .facilityCard p {
   font-size: 16px;
   font-weight: 300;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
-@media (max-width: 991px) {
+
+@media (max-width: 1500px) {
   .facilityCard {
-    width: 400px;
+    width: auto;
+    height: 300px;
   }
 
   .facilityCardDes h2 {
     font-size: 25px;
+  }
+  .facilityCard img {
+    max-width: 150px;
   }
 }

@@ -1,8 +1,9 @@
-/*item style*/
+/* Item Style */
 .itemContainer {
   display: flex;
   flex-direction: column;
   width: 400px;
+  max-width: 100%; /* Prevent overflow on smaller screens */
 }
 
 .itemdescription h2 {
@@ -16,34 +17,37 @@
   font-weight: 250;
 }
 
-/*about us section2 style*/
-
+/* About Us Section 2 Style */
 .AboutusS2content {
   display: flex;
+  flex-wrap: wrap; /* Enable wrapping */
   gap: 50px;
   color: #002b49;
   text-align: left;
-  margin: 200px 20px;
   justify-content: center;
+  margin: 200px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 991px) {
-  .AboutusS2container {
+  .AboutusS2content {
     flex-direction: column;
     align-items: center;
-    height: auto;
-    padding: 100px 20px;
-    gap: 50px;
-  }
-
-  .AboutusS2mainImage {
-    width: 80%;
-    height: auto;
-  }
-
-  .AboutusS2content {
-    width: 90%;
+    margin: 100px 20px;
     text-align: center;
-    height: auto;
+  }
+
+  .itemContainer {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .itemdescription h2 {
+    font-size: 28px;
+  }
+
+  .itemdescription p {
+    font-size: 18px;
   }
 }

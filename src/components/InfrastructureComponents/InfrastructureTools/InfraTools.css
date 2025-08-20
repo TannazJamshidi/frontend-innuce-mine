@@ -9,7 +9,8 @@
   background-position: center top;
   display: flex;
   flex-direction: column;
-  padding: 80px 140px;
+  padding-top: 80px ;
+  padding-bottom: 80px ;
 }
 
 .toolsContainer h1 {
@@ -19,16 +20,23 @@
   margin: auto;
 }
 
+
 .toolsGrid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      /* center cards in row */
+  align-items: flex-start;
   gap: 30px;
   margin-top: 200px;
   margin-bottom: 30px;
-  align-self: center;
 }
 
 @media (max-width: 991px) {
   .toolsContainer h1 {
     font-size: 40px;
   }
+  .toolsGrid{
+    margin-top: 100px;
+  }
+  
 }

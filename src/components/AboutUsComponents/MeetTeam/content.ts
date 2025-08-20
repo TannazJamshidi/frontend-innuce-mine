@@ -8,8 +8,8 @@ import salvatore_tilocca from "../../../assets/members/SALVATORE TILOCCA (1).jpg
 import francesco_guarino from "../../../assets/members/francesco-guarino.jpg"
 import nicola_cassetta from "../../../assets/members/nicola-cassetta.jpg"
 import benedetto_leto from "../../../assets/members/benedetto-leto.png"
+import Riccardo_Pignari from "../../../assets/members/Riccardo Pignari.png"
 
-import memberProf from "../../../assets/members/memberProf.svg"
 
 export const members = [
     {
@@ -29,7 +29,7 @@ export const members = [
         linkedInUrl: "https://www.linkedin.com/in/vittorio-fra-1766171ba/",
     },
     {
-        imgSrc: memberProf,
+        imgSrc: Riccardo_Pignari,
         name: "Riccardo Pignari",
         role: "Ph.D. Student",
         description:

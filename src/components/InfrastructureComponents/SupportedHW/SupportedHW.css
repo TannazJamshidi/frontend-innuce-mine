@@ -5,7 +5,8 @@
   background-position: center top;
   display: flex;
   flex-direction: column;
-  padding: 80px 140px;
+  padding-top: 80px ;
+  padding-bottom: 80px ;
 }
 
 .HWcontainer h1 {
@@ -17,14 +18,19 @@
 
 .HWcardGrid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      /* center cards in row */
+  align-items: flex-start;
   gap: 30px;
   margin-top: 200px;
   margin-bottom: 30px;
-  align-self: center;
 }
 
 @media (max-width: 991px) {
   .HWcontainer h1 {
     font-size: 40px;
+  }
+  .HWcardGrid{
+    margin-top: 100px;
   }
 }

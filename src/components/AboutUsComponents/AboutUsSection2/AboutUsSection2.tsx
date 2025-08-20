@@ -2,7 +2,7 @@ import React from "react";
 import { NeuromorphicItem } from "./AboutUsItem";
 import "./AboutUsSection2.css";
 import Cicon from "../../../assets/corner-right-down.svg";
-import S2image from "../../../assets/AboutUsS2Icon.jpg";
+
 
 const neuromorphicData = [
   {

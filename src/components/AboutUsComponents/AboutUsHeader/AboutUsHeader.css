@@ -3,7 +3,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
 
 .AboutUsheader img {
@@ -30,4 +32,33 @@
   color: #002b49;
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .AboutUsheader {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .AboutUsContent {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  padding: 20px 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
+  .AboutUsContent h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .AboutUsContent p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .AboutUsheader img {
+  width: 70%;
+}
 }
